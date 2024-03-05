@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -19843,6 +19843,123 @@ Source: Electronioc Interconnects European Edition 1998</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="bb84">
+<packages>
+<package name="TEA5114A" urn="urn:adsk.eagle:footprint:43556895/1" locally_modified="yes">
+<description>- SUPPLY VOLTAGE: 18V&lt;br&gt;&lt;/br&gt;
+- BANDWIDTH: 25MHz &lt;br&gt;&lt;/br&gt;
+- CROSSTALK: 55dB&lt;br&gt;&lt;/br&gt;
+- SHORT CIRCUIT TO GROUND OR VCC PROTECTED&lt;br&gt;&lt;/br&gt;
+- ANTI SATURATION GAIN CHANGING&lt;br&gt;&lt;/br&gt;
+- VIDEO SWITCHING&lt;br&gt;&lt;/br&gt;
+&lt;p&gt;16-pin DIP package with 2.54 mm (0.10 in) pitch, 8.50 mm (0.33 in) span with body size 20.00 X 7.10 X 5.10 mm&lt;/p&gt;</description>
+<circle x="-5.4335" y="8.89" radius="0.25" width="0" layer="21"/>
+<wire x1="-3.55" y1="9.8235" x2="-3.55" y2="10" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="10" x2="3.55" y2="10" width="0.12" layer="21"/>
+<wire x1="3.55" y1="10" x2="3.55" y2="9.8235" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="-9.8235" x2="-3.55" y2="-10" width="0.12" layer="21"/>
+<wire x1="-3.55" y1="-10" x2="3.55" y2="-10" width="0.12" layer="21"/>
+<wire x1="3.55" y1="-10" x2="3.55" y2="-9.8235" width="0.12" layer="21"/>
+<wire x1="3.55" y1="-10" x2="-3.55" y2="-10" width="0.12" layer="51"/>
+<wire x1="-3.55" y1="-10" x2="-3.55" y2="10" width="0.12" layer="51"/>
+<wire x1="-3.55" y1="10" x2="3.55" y2="10" width="0.12" layer="51"/>
+<wire x1="3.55" y1="10" x2="3.55" y2="-10" width="0.12" layer="51"/>
+<pad name="1" x="-4.25" y="8.89" drill="0.759" diameter="1.359"/>
+<pad name="2" x="-4.25" y="6.35" drill="0.759" diameter="1.359"/>
+<pad name="3" x="-4.25" y="3.81" drill="0.759" diameter="1.359"/>
+<pad name="4" x="-4.25" y="1.27" drill="0.759" diameter="1.359"/>
+<pad name="5" x="-4.25" y="-1.27" drill="0.759" diameter="1.359"/>
+<pad name="6" x="-4.25" y="-3.81" drill="0.759" diameter="1.359"/>
+<pad name="7" x="-4.25" y="-6.35" drill="0.759" diameter="1.359"/>
+<pad name="8" x="-4.25" y="-8.89" drill="0.759" diameter="1.359"/>
+<pad name="9" x="4.25" y="-8.89" drill="0.759" diameter="1.359"/>
+<pad name="10" x="4.25" y="-6.35" drill="0.759" diameter="1.359"/>
+<pad name="11" x="4.25" y="-3.81" drill="0.759" diameter="1.359"/>
+<pad name="12" x="4.25" y="-1.27" drill="0.759" diameter="1.359"/>
+<pad name="13" x="4.25" y="1.27" drill="0.759" diameter="1.359"/>
+<pad name="14" x="4.25" y="3.81" drill="0.759" diameter="1.359"/>
+<pad name="15" x="4.25" y="6.35" drill="0.759" diameter="1.359"/>
+<pad name="16" x="4.25" y="8.89" drill="0.759" diameter="1.359"/>
+<text x="0" y="10.635" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-10.635" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="DIP850W50P254L2000H510Q16B" urn="urn:adsk.eagle:package:43556886/1" type="model">
+<description>16-DIP, 2.54 mm (0.10 in) pitch, 8.50 mm (0.33 in) span, 20.00 X 7.10 X 5.10 mm body
+&lt;p&gt;16-pin DIP package with 2.54 mm (0.10 in) pitch, 8.50 mm (0.33 in) span with body size 20.00 X 7.10 X 5.10 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="TEA5114A"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="TEA5114A">
+<pin name="R1" x="-22.86" y="17.78" length="short" direction="in"/>
+<pin name="GND" x="-22.86" y="15.24" length="short"/>
+<pin name="R2" x="-22.86" y="12.7" length="short" direction="in"/>
+<pin name="G1" x="-22.86" y="10.16" length="short" direction="in"/>
+<pin name="G2" x="-22.86" y="7.62" length="short" direction="in"/>
+<pin name="B1" x="-22.86" y="5.08" length="short" direction="in"/>
+<pin name="B2" x="-22.86" y="2.54" length="short" direction="in"/>
+<pin name="FB1" x="-22.86" y="0" length="short" direction="in"/>
+<pin name="FB" x="-2.54" y="0" length="short" direction="out" rot="R180"/>
+<pin name="FBB" x="-2.54" y="2.54" length="short" direction="in" rot="R180"/>
+<pin name="B" x="-2.54" y="5.08" length="short" direction="out" rot="R180"/>
+<pin name="FBG" x="-2.54" y="7.62" length="short" direction="in" rot="R180"/>
+<pin name="G" x="-2.54" y="10.16" length="short" direction="out" rot="R180"/>
+<pin name="VCC" x="-2.54" y="12.7" length="short" direction="pwr" rot="R180"/>
+<pin name="FBR" x="-2.54" y="15.24" length="short" direction="in" rot="R180"/>
+<pin name="R" x="-2.54" y="17.78" length="short" direction="out" rot="R180"/>
+<wire x1="-20.32" y1="20.32" x2="-20.32" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="20.32" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="20.32" x2="-20.32" y2="20.32" width="0.254" layer="94"/>
+<text x="-20.32" y="22.86" size="1.778" layer="95">&gt;NAME</text>
+<text x="-20.32" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="RGB">
+<description>This integrated circuit provides RGB switching allowing connections between peri TV plug, internal RGB generator and video processor in a TV set.&lt;br&gt;&lt;/br&gt;
+The input signal black level is tied to the same reference voltageon each input in order to haveno differential voltage when switching two RGB generators.&lt;br&gt;&lt;/br&gt;
+An AC output signal higher than 2 Vpp makes gain goingslowly down to 0dBto protect the TV set video amplifier from saturation.&lt;br&gt;&lt;/br&gt;
+Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;br&gt;&lt;/br&gt;
+&lt;p&gt;&lt;b&gt;1996 SGS-THOMSON Microelectronics - All Rights Reserved&lt;/b&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TEA5114A" x="10.16" y="0"/>
+</gates>
+<devices>
+<device name="TEA5114A" package="TEA5114A">
+<connects>
+<connect gate="G$1" pin="B" pad="11"/>
+<connect gate="G$1" pin="B1" pad="6"/>
+<connect gate="G$1" pin="B2" pad="7"/>
+<connect gate="G$1" pin="FB" pad="9"/>
+<connect gate="G$1" pin="FB1" pad="8"/>
+<connect gate="G$1" pin="FBB" pad="10"/>
+<connect gate="G$1" pin="FBG" pad="12"/>
+<connect gate="G$1" pin="FBR" pad="15"/>
+<connect gate="G$1" pin="G" pad="13"/>
+<connect gate="G$1" pin="G1" pad="4"/>
+<connect gate="G$1" pin="G2" pad="5"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="R" pad="16"/>
+<connect gate="G$1" pin="R1" pad="1"/>
+<connect gate="G$1" pin="R2" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="14"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43556886/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -19923,6 +20040,7 @@ Source: Electronioc Interconnects European Edition 1998</description>
 <part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
+<part name="U$1" library="bb84" deviceset="RGB" device="TEA5114A" package3d_urn="urn:adsk.eagle:package:43556886/1" value="TEA5114A"/>
 </parts>
 <sheets>
 <sheet>
@@ -20251,6 +20369,10 @@ Source: Electronioc Interconnects European Edition 1998</description>
 <instance part="R19" gate="G$1" x="198.12" y="96.52" smashed="yes">
 <attribute name="NAME" x="196.85" y="98.0186" size="1.778" layer="95"/>
 <attribute name="VALUE" x="196.85" y="93.218" size="1.778" layer="96"/>
+</instance>
+<instance part="U$1" gate="G$1" x="200.66" y="12.7" smashed="yes">
+<attribute name="NAME" x="180.34" y="35.56" size="1.778" layer="95"/>
+<attribute name="VALUE" x="180.34" y="7.62" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -20877,6 +20999,102 @@ Source: Electronioc Interconnects European Edition 1998</description>
 <pinref part="X1" gate="-3" pin="F"/>
 <pinref part="R19" gate="G$1" pin="2"/>
 <wire x1="205.74" y1="96.52" x2="203.2" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="R"/>
+<wire x1="198.12" y1="30.48" x2="200.66" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="30.48" x2="200.66" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="35.56" x2="175.26" y2="35.56" width="0.1524" layer="91"/>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="175.26" y1="35.56" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="101.6" x2="177.8" y2="101.6" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="G"/>
+<wire x1="198.12" y1="22.86" x2="203.2" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="22.86" x2="203.2" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="38.1" x2="177.8" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R18" gate="G$1" pin="1"/>
+<wire x1="177.8" y1="38.1" x2="177.8" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="99.06" x2="185.42" y2="99.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B"/>
+<wire x1="198.12" y1="17.78" x2="205.74" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="17.78" x2="205.74" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="40.64" x2="180.34" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="180.34" y1="40.64" x2="180.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="96.52" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="R1"/>
+<pinref part="C13" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="30.48" x2="160.02" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="R2"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="25.4" x2="144.78" y2="25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="20.32" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="20.32" x2="162.56" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="G1"/>
+<wire x1="162.56" y1="22.86" x2="177.8" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="G2"/>
+<wire x1="177.8" y1="20.32" x2="165.1" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="20.32" x2="165.1" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="165.1" y1="15.24" x2="144.78" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="160.02" y1="10.16" x2="167.64" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="B1"/>
+<wire x1="167.64" y1="10.16" x2="167.64" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="17.78" x2="177.8" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="B2"/>
+<wire x1="177.8" y1="15.24" x2="170.18" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="15.24" x2="170.18" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="170.18" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="FBR"/>
+<wire x1="198.12" y1="27.94" x2="200.66" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="27.94" x2="200.66" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="FBG"/>
+<wire x1="200.66" y1="20.32" x2="198.12" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="20.32" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<junction x="200.66" y="20.32"/>
+<pinref part="U$1" gate="G$1" pin="FBB"/>
+<wire x1="200.66" y1="15.24" x2="198.12" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
