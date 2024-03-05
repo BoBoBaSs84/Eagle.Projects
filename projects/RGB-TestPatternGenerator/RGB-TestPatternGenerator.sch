@@ -19960,6 +19960,148 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 </deviceset>
 </devicesets>
 </library>
+<library name="diode" urn="urn:adsk.eagle:library:210">
+<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
+Based on the following sources:
+&lt;ul&gt;
+&lt;li&gt;Motorola : www.onsemi.com
+&lt;li&gt;Fairchild : www.fairchildsemi.com
+&lt;li&gt;Philips : www.semiconductors.com
+&lt;li&gt;Vishay : www.vishay.de
+&lt;/ul&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DO35-10" urn="urn:adsk.eagle:footprint:43092/1" library_version="8">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 10.16 mm</description>
+<wire x1="5.08" y1="0" x2="4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-5.08" y1="0" x2="-4.191" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="2.286" y1="-0.762" x2="2.286" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-5.08" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="5.08" y="0" drill="0.8128" shape="long"/>
+<text x="-2.159" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.159" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="4.191" y2="0.254" layer="21"/>
+<rectangle x1="-4.191" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+<package name="DO35-7" urn="urn:adsk.eagle:footprint:43093/1" library_version="8">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 2 mm, horizontal, grid 7.62 mm</description>
+<wire x1="3.81" y1="0" x2="2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.921" y2="0" width="0.508" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="1.016" x2="2.286" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="2.286" y1="0.762" x2="2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="2.032" y1="-1.016" x2="2.286" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.286" y1="0.762" x2="-2.032" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-2.286" y1="-0.762" x2="-2.032" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="-2.032" y1="-1.016" x2="2.032" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="0.762" x2="-2.286" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-2.032" y1="1.016" x2="2.032" y2="1.016" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="0.8128" shape="long"/>
+<pad name="A" x="3.81" y="0" drill="0.8128" shape="long"/>
+<text x="-2.286" y="1.27" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.286" y="-2.667" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.905" y1="-1.016" x2="-1.397" y2="1.016" layer="21"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.921" y2="0.254" layer="21"/>
+<rectangle x1="-2.921" y1="-0.254" x2="-2.286" y2="0.254" layer="21"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="DO35-10" urn="urn:adsk.eagle:package:43344/2" type="model" library_version="8">
+<description>DIODE
+diameter 2 mm, horizontal, grid 10.16 mm</description>
+<packageinstances>
+<packageinstance name="DO35-10"/>
+</packageinstances>
+</package3d>
+<package3d name="DO35-7" urn="urn:adsk.eagle:package:43339/2" type="model" library_version="8">
+<description>DIODE
+diameter 2 mm, horizontal, grid 7.62 mm</description>
+<packageinstances>
+<packageinstance name="DO35-7"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="D" urn="urn:adsk.eagle:symbol:43091/2" library_version="8">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 1</text>
+<text x="2.54" y="0" size="0.4064" layer="99" align="center">SpiceOrder 2</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="1N4148" urn="urn:adsk.eagle:component:43496/5" prefix="D" library_version="8">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+high speed (Philips)</description>
+<gates>
+<gate name="G$1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DO35-10" package="DO35-10">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43344/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="21" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="DO35-7" package="DO35-7">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:43339/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="58" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20041,6 +20183,9 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="U$1" library="bb84" deviceset="RGB" device="TEA5114A" package3d_urn="urn:adsk.eagle:package:43556886/1" value="TEA5114A"/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9V"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
+<part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20226,14 +20371,14 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <attribute name="NAME" x="128.0414" y="-8.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="132.842" y="-8.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND12" gate="1" x="114.3" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="111.76" y="-17.78" size="1.778" layer="96"/>
+<instance part="GND12" gate="1" x="114.3" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="111.76" y="-22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="121.92" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="119.38" y="-17.78" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="121.92" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="119.38" y="-22.86" size="1.778" layer="96"/>
 </instance>
-<instance part="GND14" gate="1" x="129.54" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="127" y="-17.78" size="1.778" layer="96"/>
+<instance part="GND14" gate="1" x="129.54" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="127" y="-22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="C8" gate="G$1" x="139.7" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="139.319" y="9.144" size="1.778" layer="95" rot="R180"/>
@@ -20263,8 +20408,8 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <attribute name="NAME" x="148.3614" y="-8.89" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="153.162" y="-8.89" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND15" gate="1" x="149.86" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="147.32" y="-17.78" size="1.778" layer="96"/>
+<instance part="GND15" gate="1" x="149.86" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="147.32" y="-22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="147.32" y="78.74" smashed="yes">
 <attribute name="NAME" x="146.05" y="80.2386" size="1.778" layer="95"/>
@@ -20306,8 +20451,8 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <attribute name="NAME" x="-7.62" y="-11.43" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-7.62" y="-4.445" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND16" gate="1" x="-2.54" y="-15.24" smashed="yes">
-<attribute name="VALUE" x="-5.08" y="-17.78" size="1.778" layer="96"/>
+<instance part="GND16" gate="1" x="-2.54" y="-20.32" smashed="yes">
+<attribute name="VALUE" x="-5.08" y="-22.86" size="1.778" layer="96"/>
 </instance>
 <instance part="X1" gate="-1" x="208.28" y="101.6" smashed="yes">
 <attribute name="NAME" x="209.55" y="100.838" size="1.778" layer="95"/>
@@ -20373,6 +20518,16 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <instance part="U$1" gate="G$1" x="200.66" y="12.7" smashed="yes">
 <attribute name="NAME" x="180.34" y="35.56" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="7.62" size="1.778" layer="96"/>
+</instance>
+<instance part="P+8" gate="VCC" x="208.28" y="45.72" smashed="yes">
+<attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D1" gate="G$1" x="200.66" y="-5.08" smashed="yes" rot="R90">
+<attribute name="NAME" x="200.1774" y="-2.54" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="202.9714" y="-2.54" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND18" gate="1" x="175.26" y="5.08" smashed="yes">
+<attribute name="VALUE" x="172.72" y="2.54" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -20454,22 +20609,22 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="114.3" y1="-10.16" x2="114.3" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="-10.16" x2="114.3" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="121.92" y1="-10.16" x2="121.92" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="-10.16" x2="121.92" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="129.54" y1="-10.16" x2="129.54" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="-10.16" x2="129.54" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="149.86" y1="-10.16" x2="149.86" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="149.86" y1="-10.16" x2="149.86" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="1" pin="2"/>
@@ -20478,7 +20633,7 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="-2.54" y1="-7.62" x2="-5.08" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="-2.54" y1="-12.7" x2="-2.54" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-7.62" width="0.1524" layer="91"/>
 <junction x="-2.54" y="-7.62"/>
 </segment>
 <segment>
@@ -20502,6 +20657,12 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <wire x1="205.74" y1="91.44" x2="200.66" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="200.66" y1="91.44" x2="200.66" y2="88.9" width="0.1524" layer="91"/>
 <junction x="200.66" y="88.9"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="177.8" y1="27.94" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="175.26" y1="27.94" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -20552,6 +20713,12 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <wire x1="83.82" y1="83.82" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="IC5" gate="C" pin="I1"/>
 <wire x1="83.82" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="VCC" pin="VCC"/>
+<wire x1="208.28" y1="43.18" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="VCC"/>
+<wire x1="208.28" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -20962,6 +21129,11 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="5.08" y1="-2.54" x2="5.08" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="200.66" y1="-7.62" x2="200.66" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="-15.24" x2="5.08" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="-2.54" width="0.1524" layer="91"/>
+<junction x="5.08" y="-2.54"/>
 </segment>
 </net>
 <net name="N$34" class="0">
@@ -21095,6 +21267,9 @@ Fast blanking output is a logicial OR between FB1 (Pin 8) and FB2 (Pin 10).&lt;b
 <junction x="200.66" y="20.32"/>
 <pinref part="U$1" gate="G$1" pin="FBB"/>
 <wire x1="200.66" y1="15.24" x2="198.12" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
+<wire x1="200.66" y1="-2.54" x2="200.66" y2="15.24" width="0.1524" layer="91"/>
+<junction x="200.66" y="15.24"/>
 </segment>
 </net>
 </nets>
