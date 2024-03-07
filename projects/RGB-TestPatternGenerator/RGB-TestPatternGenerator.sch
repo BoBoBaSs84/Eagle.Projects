@@ -17225,6 +17225,12 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 </symbol>
+<symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
+<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -17244,6 +17250,19 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -20129,8 +20148,6 @@ high speed (Philips)</description>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="DINA4_L" device=""/>
-<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9V"/>
-<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="IC3" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4060" device="N" package3d_urn="urn:adsk.eagle:package:922/2"/>
 <part name="IC4" library="40xx" library_urn="urn:adsk.eagle:library:80" deviceset="4040" device="N" package3d_urn="urn:adsk.eagle:package:922/2"/>
 <part name="IC5" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" deviceset="74*10" device="N" package3d_urn="urn:adsk.eagle:package:16407/2" technology="HC"/>
@@ -20170,10 +20187,6 @@ high speed (Philips)</description>
 <part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120R"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120R"/>
 <part name="R16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="120R"/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
-<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="JP1" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP2E" device="" package3d_urn="urn:adsk.eagle:package:15452/1"/>
 <part name="JP2" library="jumper" library_urn="urn:adsk.eagle:library:252" deviceset="JP1E" device="" package3d_urn="urn:adsk.eagle:package:15455/1"/>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -20183,9 +20196,27 @@ high speed (Philips)</description>
 <part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="68R"/>
 <part name="U$1" library="bb84" deviceset="RGB" device="TEA5114A" package3d_urn="urn:adsk.eagle:package:43556886/1" value="TEA5114A"/>
-<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9V"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4148" device="DO35-7" package3d_urn="urn:adsk.eagle:package:43339/2"/>
 <part name="GND18" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9V"/>
+<part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9V"/>
+<part name="GND19" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND20" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20252,12 +20283,6 @@ high speed (Philips)</description>
 <attribute name="LAST_DATE_TIME" x="162.56" y="-72.39" size="2.54" layer="94"/>
 <attribute name="SHEET" x="236.22" y="-72.39" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="167.64" y="-54.61" size="2.54" layer="94"/>
-</instance>
-<instance part="P+1" gate="VCC" x="35.56" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="33.02" y="-35.56" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+2" gate="VCC" x="76.2" y="-33.02" smashed="yes">
-<attribute name="VALUE" x="73.66" y="-35.56" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="IC3" gate="A" x="15.24" y="76.2" smashed="yes">
 <attribute name="NAME" x="7.62" y="94.615" size="1.778" layer="95"/>
@@ -20431,18 +20456,6 @@ high speed (Philips)</description>
 <attribute name="NAME" x="-4.0386" y="11.43" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="0.762" y="11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+3" gate="VCC" x="12.7" y="25.4" smashed="yes">
-<attribute name="VALUE" x="10.16" y="22.86" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+4" gate="VCC" x="5.08" y="25.4" smashed="yes">
-<attribute name="VALUE" x="2.54" y="22.86" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+5" gate="VCC" x="-2.54" y="25.4" smashed="yes">
-<attribute name="VALUE" x="-5.08" y="22.86" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="P+6" gate="VCC" x="83.82" y="86.36" smashed="yes">
-<attribute name="VALUE" x="81.28" y="83.82" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="JP1" gate="1" x="-7.62" y="0" smashed="yes" rot="R90">
 <attribute name="NAME" x="-7.62" y="-3.81" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-7.62" y="5.715" size="1.778" layer="96" rot="R180"/>
@@ -20519,15 +20532,87 @@ high speed (Philips)</description>
 <attribute name="NAME" x="180.34" y="35.56" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="7.62" size="1.778" layer="96"/>
 </instance>
-<instance part="P+8" gate="VCC" x="208.28" y="45.72" smashed="yes">
-<attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" rot="R90"/>
-</instance>
 <instance part="D1" gate="G$1" x="200.66" y="-5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="200.1774" y="-2.54" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="202.9714" y="-2.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND18" gate="1" x="175.26" y="5.08" smashed="yes">
 <attribute name="VALUE" x="172.72" y="2.54" size="1.778" layer="96"/>
+</instance>
+<instance part="P+7" gate="1" x="76.2" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="73.66" y="-35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+9" gate="VCC" x="35.56" y="-33.02" smashed="yes">
+<attribute name="VALUE" x="33.02" y="-35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+1" gate="1" x="-2.54" y="25.4" smashed="yes">
+<attribute name="VALUE" x="-5.08" y="22.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+2" gate="1" x="5.08" y="25.4" smashed="yes">
+<attribute name="VALUE" x="2.54" y="22.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+3" gate="1" x="12.7" y="25.4" smashed="yes">
+<attribute name="VALUE" x="10.16" y="22.86" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+4" gate="1" x="83.82" y="86.36" smashed="yes">
+<attribute name="VALUE" x="81.28" y="83.82" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+5" gate="VCC" x="208.28" y="45.72" smashed="yes">
+<attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="IC3" gate="P" x="99.06" y="-48.26" smashed="yes">
+<attribute name="NAME" x="97.79" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="IC4" gate="P" x="106.68" y="-48.26" smashed="yes">
+<attribute name="NAME" x="105.41" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="IC8" gate="P" x="137.16" y="-48.26" smashed="yes">
+<attribute name="NAME" x="136.525" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="IC7" gate="P" x="129.54" y="-48.26" smashed="yes">
+<attribute name="NAME" x="128.905" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="IC6" gate="P" x="121.92" y="-48.26" smashed="yes">
+<attribute name="NAME" x="120.65" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="IC5" gate="P" x="114.3" y="-48.26" smashed="yes">
+<attribute name="NAME" x="113.665" y="-48.895" size="1.778" layer="95"/>
+</instance>
+<instance part="GND19" gate="1" x="99.06" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="96.52" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="GND20" gate="1" x="106.68" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="104.14" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="GND21" gate="1" x="114.3" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="111.76" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="GND22" gate="1" x="121.92" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="119.38" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="GND23" gate="1" x="129.54" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="127" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="GND24" gate="1" x="137.16" y="-60.96" smashed="yes">
+<attribute name="VALUE" x="134.62" y="-63.5" size="1.778" layer="96"/>
+</instance>
+<instance part="P+6" gate="1" x="99.06" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="96.52" y="-38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+8" gate="1" x="106.68" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="104.14" y="-38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+10" gate="1" x="114.3" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="111.76" y="-38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+11" gate="1" x="121.92" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="119.38" y="-38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+12" gate="1" x="129.54" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="127" y="-38.1" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+13" gate="1" x="137.16" y="-35.56" smashed="yes">
+<attribute name="VALUE" x="134.62" y="-38.1" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -20662,7 +20747,41 @@ high speed (Philips)</description>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="177.8" y1="27.94" x2="175.26" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="175.26" y1="27.94" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="27.94" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="FB1"/>
+<wire x1="175.26" y1="12.7" x2="175.26" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="12.7" x2="175.26" y2="12.7" width="0.1524" layer="91"/>
+<junction x="175.26" y="12.7"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="P" pin="VSS"/>
+<pinref part="GND19" gate="1" pin="GND"/>
+<wire x1="99.06" y1="-55.88" x2="99.06" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="P" pin="VSS"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="106.68" y1="-55.88" x2="106.68" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="P" pin="GND"/>
+<pinref part="GND21" gate="1" pin="GND"/>
+<wire x1="114.3" y1="-55.88" x2="114.3" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC6" gate="P" pin="VSS"/>
+<pinref part="GND22" gate="1" pin="GND"/>
+<wire x1="121.92" y1="-55.88" x2="121.92" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="P" pin="GND"/>
+<pinref part="GND23" gate="1" pin="GND"/>
+<wire x1="129.54" y1="-55.88" x2="129.54" y2="-58.42" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC8" gate="P" pin="GND"/>
+<pinref part="GND24" gate="1" pin="GND"/>
+<wire x1="137.16" y1="-55.88" x2="137.16" y2="-58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -20678,47 +20797,14 @@ high speed (Philips)</description>
 <pinref part="IC1" gate="A1" pin="VI"/>
 <wire x1="50.8" y1="-40.64" x2="45.72" y2="-40.64" width="0.1524" layer="91"/>
 <junction x="45.72" y="-40.64"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<wire x1="35.56" y1="-35.56" x2="35.56" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="VCC" pin="VCC"/>
+<wire x1="35.56" y1="-40.64" x2="35.56" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="A1" pin="VO"/>
-<pinref part="C3" gate="G$1" pin="+"/>
-<wire x1="71.12" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="-40.64" x2="76.2" y2="-45.72" width="0.1524" layer="91"/>
-<pinref part="C5" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-45.72" x2="86.36" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="76.2" y="-40.64"/>
-<pinref part="P+2" gate="VCC" pin="VCC"/>
-<wire x1="76.2" y1="-35.56" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+5" gate="VCC" pin="VCC"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="22.86" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+4" gate="VCC" pin="VCC"/>
-<pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="22.86" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="22.86" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+6" gate="VCC" pin="VCC"/>
-<wire x1="83.82" y1="83.82" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="C" pin="I1"/>
-<wire x1="83.82" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+8" gate="VCC" pin="VCC"/>
-<wire x1="208.28" y1="43.18" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VCC"/>
 <wire x1="208.28" y1="25.4" x2="198.12" y2="25.4" width="0.1524" layer="91"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
+<wire x1="208.28" y1="43.18" x2="208.28" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21272,12 +21358,91 @@ high speed (Philips)</description>
 <junction x="200.66" y="15.24"/>
 </segment>
 </net>
+<net name="+5V" class="0">
+<segment>
+<pinref part="IC1" gate="A1" pin="VO"/>
+<pinref part="C3" gate="G$1" pin="+"/>
+<wire x1="71.12" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-40.64" x2="76.2" y2="-45.72" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="86.36" y1="-45.72" x2="86.36" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-40.64" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="76.2" y="-40.64"/>
+<pinref part="P+7" gate="1" pin="+5V"/>
+<wire x1="76.2" y1="-35.56" x2="76.2" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="1" pin="+5V"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="-2.54" y1="22.86" x2="-2.54" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="1" pin="+5V"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="22.86" x2="5.08" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+3" gate="1" pin="+5V"/>
+<pinref part="R14" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="22.86" x2="12.7" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC5" gate="C" pin="I1"/>
+<wire x1="83.82" y1="78.74" x2="88.9" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="1" pin="+5V"/>
+<wire x1="83.82" y1="83.82" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+6" gate="1" pin="+5V"/>
+<pinref part="IC3" gate="P" pin="VDD"/>
+<wire x1="99.06" y1="-38.1" x2="99.06" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+8" gate="1" pin="+5V"/>
+<pinref part="IC4" gate="P" pin="VDD"/>
+<wire x1="106.68" y1="-38.1" x2="106.68" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+10" gate="1" pin="+5V"/>
+<pinref part="IC5" gate="P" pin="VCC"/>
+<wire x1="114.3" y1="-38.1" x2="114.3" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+11" gate="1" pin="+5V"/>
+<pinref part="IC6" gate="P" pin="VDD"/>
+<wire x1="121.92" y1="-38.1" x2="121.92" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+12" gate="1" pin="+5V"/>
+<pinref part="IC7" gate="P" pin="VCC"/>
+<wire x1="129.54" y1="-38.1" x2="129.54" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+13" gate="1" pin="+5V"/>
+<pinref part="IC8" gate="P" pin="VCC"/>
+<wire x1="137.16" y1="-38.1" x2="137.16" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="101,1,208.28,93.98,X1-4,F,,,,"/>
+<approved hash="101,1,205.74,81.28,X1-9,F,,,,"/>
+<approved hash="101,1,205.74,76.2,X1-11,F,,,,"/>
+<approved hash="101,1,208.28,73.66,X1-12,F,,,,"/>
+<approved hash="101,1,205.74,66.04,X1-15,F,,,,"/>
+<approved hash="104,1,99.06,-55.88,IC3P,VSS,GND,,,"/>
+<approved hash="104,1,99.06,-40.64,IC3P,VDD,+5V,,,"/>
+<approved hash="104,1,106.68,-55.88,IC4P,VSS,GND,,,"/>
+<approved hash="104,1,106.68,-40.64,IC4P,VDD,+5V,,,"/>
+<approved hash="104,1,114.3,-40.64,IC5P,VCC,+5V,,,"/>
+<approved hash="104,1,121.92,-55.88,IC6P,VSS,GND,,,"/>
+<approved hash="104,1,121.92,-40.64,IC6P,VDD,+5V,,,"/>
+<approved hash="104,1,129.54,-40.64,IC7P,VCC,+5V,,,"/>
 <approved hash="202,1,43.18,5.08,IC8,4B,,,,"/>
 <approved hash="202,1,43.18,7.62,IC8,4A,,,,"/>
+<approved hash="104,1,137.16,-40.64,IC8P,VCC,+5V,,,"/>
 </errors>
 </schematic>
 </drawing>
