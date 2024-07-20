@@ -14023,10 +14023,10 @@ Block, Siemens and generic&lt;p&gt;
 <wire x1="177.8" y1="86.36" x2="175.26" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="86.36" x2="175.26" y2="81.28" width="0.1524" layer="91"/>
 <junction x="175.26" y="81.28"/>
-<label x="167.64" y="73.66" size="1.778" layer="95"/>
+<label x="175.26" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="16.1V" class="0">
+<net name="+16.1V" class="0">
 <segment>
 <pinref part="D1" gate="1" pin="C"/>
 <wire x1="129.54" y1="109.22" x2="129.54" y2="111.76" width="0.1524" layer="91"/>
@@ -14054,7 +14054,7 @@ Block, Siemens and generic&lt;p&gt;
 <wire x1="177.8" y1="101.6" x2="175.26" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="101.6" x2="175.26" y2="106.68" width="0.1524" layer="91"/>
 <junction x="175.26" y="106.68"/>
-<label x="167.64" y="109.22" size="1.778" layer="95"/>
+<label x="175.26" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -14095,7 +14095,7 @@ Block, Siemens and generic&lt;p&gt;
 <junction x="137.16" y="88.9"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="230VAC" class="0">
 <segment>
 <pinref part="X2" gate="-1" pin="KL"/>
 <wire x1="55.88" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
@@ -14106,6 +14106,7 @@ Block, Siemens and generic&lt;p&gt;
 <pinref part="TR2" gate="G$1" pin="1"/>
 <wire x1="83.82" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
 <junction x="73.66" y="106.68"/>
+<label x="45.72" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$7" class="0">
