@@ -11259,7 +11259,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="1µF"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="10µF"/>
 </parts>
 <sheets>
 <sheet>
