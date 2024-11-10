@@ -235,18 +235,6 @@ Grid 5.08 mm&lt;p&gt;
 <text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
 <pin name="-24V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+5V" urn="urn:adsk.eagle:symbol:26929/1" library_version="1">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
-<symbol name="-5V" urn="urn:adsk.eagle:symbol:26930/1" library_version="1">
-<wire x1="-1.27" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-2.54" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" urn="urn:adsk.eagle:component:26954/1" prefix="GND" library_version="1">
@@ -279,32 +267,6 @@ Grid 5.08 mm&lt;p&gt;
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="-24V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" urn="urn:adsk.eagle:component:26963/1" prefix="P+" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="-5V" urn="urn:adsk.eagle:component:26958/1" prefix="P-" library_version="1">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="-5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -17847,6 +17809,60 @@ nominal inductance</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="supply2" urn="urn:adsk.eagle:library:372">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+Please keep in mind, that these devices are necessary for the
+automatic wiring of the supply signals.&lt;p&gt;
+The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="+05V" urn="urn:adsk.eagle:symbol:26987/1" library_version="2">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.635" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<circle x="0" y="1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-1.905" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-05V" urn="urn:adsk.eagle:symbol:26988/1" library_version="2">
+<wire x1="-0.635" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="94"/>
+<circle x="0" y="-1.27" radius="1.27" width="0.254" layer="94"/>
+<text x="-2.54" y="-4.699" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="+5V" urn="urn:adsk.eagle:component:27032/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="+5V" symbol="+05V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5V" urn="urn:adsk.eagle:component:27036/1" prefix="SUPPLY" library_version="2">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="-5V" symbol="-05V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17871,14 +17887,14 @@ nominal inductance</description>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="L1" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="-680" package3d_urn="urn:adsk.eagle:package:14657/1" value="33µH"/>
-<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="470µF"/>
+<part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="220µF"/>
 <part name="X2" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-03P" device="" package3d_urn="urn:adsk.eagle:package:10737/1" value="OUT"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC2" library="national-semiconductor" library_urn="urn:adsk.eagle:library:307" deviceset="LM2596" device="T" package3d_urn="urn:adsk.eagle:package:21216/1"/>
 <part name="L2" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="-680" package3d_urn="urn:adsk.eagle:package:14657/1" value="47µH"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="470µF"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="330µF"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.09k"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17898,14 +17914,14 @@ nominal inductance</description>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="47k"/>
 <part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="P-6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
-<part name="P-1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-5V" device=""/>
-<part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
 <part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D3" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
 <part name="P-2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="-24V" device="" value="-20V"/>
+<part name="SUPPLY1" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY2" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-5V" device=""/>
+<part name="SUPPLY3" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="+5V" device=""/>
+<part name="SUPPLY4" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="-5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18073,18 +18089,6 @@ nominal inductance</description>
 <instance part="GND8" gate="1" x="93.98" y="73.66" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="91.44" y="71.12" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="P+3" gate="1" x="73.66" y="27.94" smashed="yes" rot="R270">
-<attribute name="VALUE" x="71.12" y="30.48" size="1.778" layer="96"/>
-</instance>
-<instance part="P-6" gate="1" x="73.66" y="17.78" smashed="yes" rot="R90">
-<attribute name="VALUE" x="71.12" y="15.24" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="P-1" gate="1" x="193.04" y="71.12" smashed="yes" rot="R90">
-<attribute name="VALUE" x="190.5" y="68.58" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="P+5" gate="1" x="152.4" y="127" smashed="yes" rot="R270">
-<attribute name="VALUE" x="149.86" y="129.54" size="1.778" layer="96"/>
-</instance>
 <instance part="D1" gate="G$1" x="60.96" y="134.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="62.865" y="136.906" size="1.778" layer="95"/>
 <attribute name="VALUE" x="62.611" y="131.826" size="1.778" layer="96"/>
@@ -18098,6 +18102,18 @@ nominal inductance</description>
 </instance>
 <instance part="P-2" gate="1" x="101.6" y="86.36" smashed="yes" rot="R180">
 <attribute name="VALUE" x="99.06" y="83.82" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="SUPPLY1" gate="+5V" x="73.66" y="27.94" smashed="yes" rot="R270">
+<attribute name="VALUE" x="74.295" y="29.845" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY2" gate="-5V" x="73.66" y="17.78" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="73.279" y="15.24" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="SUPPLY3" gate="+5V" x="149.86" y="127" smashed="yes" rot="R270">
+<attribute name="VALUE" x="150.495" y="128.905" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY4" gate="-5V" x="190.5" y="71.12" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="190.119" y="68.58" size="1.778" layer="96" rot="MR180"/>
 </instance>
 </instances>
 <busses>
@@ -18315,7 +18331,7 @@ nominal inductance</description>
 <segment>
 <pinref part="X2" gate="-1" pin="KL"/>
 <wire x1="66.04" y1="27.94" x2="71.12" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="P+3" gate="1" pin="+5V"/>
+<pinref part="SUPPLY1" gate="+5V" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
@@ -18334,16 +18350,21 @@ nominal inductance</description>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="127" x2="144.78" y2="127" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="127" x2="144.78" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="127" x2="149.86" y2="127" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="127" x2="147.32" y2="127" width="0.1524" layer="91"/>
 <junction x="144.78" y="127"/>
 <pinref part="C4" gate="G$1" pin="+"/>
 <wire x1="144.78" y1="132.08" x2="144.78" y2="127" width="0.1524" layer="91"/>
-<pinref part="P+5" gate="1" pin="+5V"/>
+<pinref part="SUPPLY3" gate="+5V" pin="+5V"/>
 </segment>
 </net>
 <net name="-5V" class="0">
 <segment>
-<wire x1="185.42" y1="71.12" x2="190.5" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="X2" gate="-3" pin="KL"/>
+<wire x1="66.04" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY2" gate="-5V" pin="-5V"/>
+</segment>
+<segment>
+<wire x1="185.42" y1="71.12" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="-"/>
 <wire x1="185.42" y1="78.74" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="IC2" gate="G$1" pin="FB"/>
@@ -18363,12 +18384,7 @@ nominal inductance</description>
 <junction x="185.42" y="71.12"/>
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="180.34" y1="71.12" x2="185.42" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="P-1" gate="1" pin="-5V"/>
-</segment>
-<segment>
-<pinref part="X2" gate="-3" pin="KL"/>
-<pinref part="P-6" gate="1" pin="-5V"/>
-<wire x1="66.04" y1="17.78" x2="71.12" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="SUPPLY4" gate="-5V" pin="-5V"/>
 </segment>
 </net>
 </nets>
