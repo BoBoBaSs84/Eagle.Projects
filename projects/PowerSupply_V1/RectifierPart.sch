@@ -10497,10 +10497,10 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="0" y1="5.6" x2="32" y2="5.6" width="0.127" layer="21"/>
 <wire x1="32" y1="5.6" x2="32" y2="0" width="0.127" layer="21"/>
 <wire x1="32" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="+VDC" x="3.5" y="2.8" drill="1.2"/>
-<pad name="~VAC1" x="13.5" y="2.8" drill="1.2"/>
-<pad name="~VAC2" x="21" y="2.8" drill="1.2"/>
-<pad name="-VDC" x="28.5" y="2.8" drill="1.2"/>
+<pad name="+VDC" x="3.5" y="2.8" drill="1.3" shape="long"/>
+<pad name="~VAC1" x="13.5" y="2.8" drill="1.3" shape="long"/>
+<pad name="~VAC2" x="21" y="2.8" drill="1.3" shape="long"/>
+<pad name="-VDC" x="28.5" y="2.8" drill="1.3" shape="long"/>
 </package>
 </packages>
 <symbols>
@@ -10602,9 +10602,9 @@ Grid 5.08 mm&lt;p&gt;
 <part name="P-5" library="bb84-supply" deviceset="-15VAC" device=""/>
 <part name="P+6" library="bb84-supply" deviceset="+20V" device=""/>
 <part name="P-6" library="bb84-supply" deviceset="-20V" device=""/>
-<part name="R+1" library="bb84" deviceset="B40C5000-3300A" device=""/>
 <part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
+<part name="R+1" library="bb84" deviceset="B40C5000-3300A" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10730,7 +10730,6 @@ Grid 5.08 mm&lt;p&gt;
 <instance part="P-6" gate="G$1" x="101.6" y="139.7" smashed="yes" rot="R90">
 <attribute name="VALUE" x="101.6" y="137.16" size="1.778" layer="96"/>
 </instance>
-<instance part="R+1" gate="G$1" x="43.18" y="147.32" smashed="yes"/>
 <instance part="C1" gate="G$1" x="78.74" y="160.02" smashed="yes">
 <attribute name="NAME" x="79.883" y="160.5026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="79.883" y="155.4226" size="1.778" layer="96"/>
@@ -10739,6 +10738,7 @@ Grid 5.08 mm&lt;p&gt;
 <attribute name="NAME" x="79.883" y="147.8026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="79.883" y="142.7226" size="1.778" layer="96"/>
 </instance>
+<instance part="R+1" gate="G$1" x="43.18" y="147.32" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -10852,9 +10852,9 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="76.2" y1="101.6" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R+1" gate="G$1" pin="~VAC2"/>
 <pinref part="P-5" gate="G$1" pin="-15VAC"/>
 <wire x1="38.1" y1="149.86" x2="22.86" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="R+1" gate="G$1" pin="~VAC2"/>
 </segment>
 </net>
 <net name="-20V" class="0">
@@ -10872,11 +10872,11 @@ Grid 5.08 mm&lt;p&gt;
 <junction x="91.44" y="139.7"/>
 <pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="78.74" y1="139.7" x2="78.74" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="R+1" gate="G$1" pin="-VDC"/>
 <wire x1="68.58" y1="149.86" x2="73.66" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="149.86" x2="73.66" y2="139.7" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="139.7" x2="78.74" y2="139.7" width="0.1524" layer="91"/>
 <junction x="78.74" y="139.7"/>
+<pinref part="R+1" gate="G$1" pin="-VDC"/>
 </segment>
 </net>
 <net name="+20V" class="0">
@@ -10894,18 +10894,18 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="78.74" y1="162.56" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="78.74" y1="165.1" x2="91.44" y2="165.1" width="0.1524" layer="91"/>
 <junction x="91.44" y="165.1"/>
-<pinref part="R+1" gate="G$1" pin="+VDC"/>
 <wire x1="68.58" y1="154.94" x2="73.66" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="154.94" x2="73.66" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="165.1" x2="78.74" y2="165.1" width="0.1524" layer="91"/>
 <junction x="78.74" y="165.1"/>
+<pinref part="R+1" gate="G$1" pin="+VDC"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="F2" gate="1" pin="2"/>
-<pinref part="R+1" gate="G$1" pin="~VAC1"/>
 <wire x1="35.56" y1="154.94" x2="38.1" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="R+1" gate="G$1" pin="~VAC1"/>
 </segment>
 </net>
 </nets>
