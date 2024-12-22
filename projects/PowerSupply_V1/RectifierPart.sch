@@ -10911,6 +10911,10 @@ Grid 5.08 mm&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,38.1,63.5,PE,,,,,"/>
+<approved hash="106,1,35.56,71.12,PE,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
