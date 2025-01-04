@@ -17698,6 +17698,10 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <part name="P-10" library="bb84-supply" deviceset="-15V" device=""/>
 <part name="IC7" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 <part name="IC8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
+<part name="P+12" library="bb84-supply" deviceset="+15V" device=""/>
+<part name="P-12" library="bb84-supply" deviceset="-15V" device=""/>
+<part name="P+13" library="bb84-supply" deviceset="+15V" device=""/>
+<part name="P-13" library="bb84-supply" deviceset="-15V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -17841,7 +17845,7 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <attribute name="NAME" x="189.23" y="112.649" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="X3" gate="-8" x="205.74" y="86.36" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="99.06" y="218.44" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="129.54" y="172.72" size="1.778" layer="96" rot="MR0"/>
 <attribute name="NAME" x="207.01" y="87.249" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="P+8" gate="G$1" x="93.98" y="167.64" smashed="yes" rot="MR270">
@@ -17963,6 +17967,20 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <instance part="IC8" gate="B" x="187.96" y="86.36" smashed="yes">
 <attribute name="NAME" x="190.5" y="89.535" size="1.778" layer="95"/>
 <attribute name="VALUE" x="190.5" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="IC7" gate="P" x="134.62" y="22.86" smashed="yes"/>
+<instance part="P+12" gate="G$1" x="134.62" y="35.56" smashed="yes">
+<attribute name="VALUE" x="137.16" y="35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P-12" gate="G$1" x="134.62" y="10.16" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="137.16" y="10.16" size="1.778" layer="96" rot="MR270"/>
+</instance>
+<instance part="IC8" gate="P" x="139.7" y="22.86" smashed="yes"/>
+<instance part="P+13" gate="G$1" x="139.7" y="35.56" smashed="yes">
+<attribute name="VALUE" x="142.24" y="35.56" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P-13" gate="G$1" x="139.7" y="10.16" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="142.24" y="10.16" size="1.778" layer="96" rot="MR270"/>
 </instance>
 </instances>
 <busses>
@@ -18293,6 +18311,16 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <junction x="40.64" y="132.08"/>
 <pinref part="P+10" gate="G$1" pin="+15V"/>
 </segment>
+<segment>
+<pinref part="P+12" gate="G$1" pin="+15V"/>
+<pinref part="IC7" gate="P" pin="V+"/>
+<wire x1="134.62" y1="33.02" x2="134.62" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC8" gate="P" pin="V+"/>
+<pinref part="P+13" gate="G$1" pin="+15V"/>
+<wire x1="139.7" y1="30.48" x2="139.7" y2="33.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="-15V" class="0">
 <segment>
@@ -18307,6 +18335,16 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <wire x1="50.8" y1="109.22" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
 <junction x="50.8" y="106.68"/>
 <pinref part="P-10" gate="G$1" pin="-15V"/>
+</segment>
+<segment>
+<pinref part="IC7" gate="P" pin="V-"/>
+<pinref part="P-12" gate="G$1" pin="-15V"/>
+<wire x1="134.62" y1="15.24" x2="134.62" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P-13" gate="G$1" pin="-15V"/>
+<pinref part="IC8" gate="P" pin="V-"/>
+<wire x1="139.7" y1="12.7" x2="139.7" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -18345,6 +18383,10 @@ Source: http://cache.national.com/ds/LM/LM158.pdf</description>
 <approved hash="104,1,165.1,144.78,IC4,V-,-18V,,,"/>
 <approved hash="104,1,215.9,160.02,IC3,V+,+18V,,,"/>
 <approved hash="104,1,215.9,144.78,IC3,V-,-18V,,,"/>
+<approved hash="104,1,134.62,30.48,IC7P,V+,+15V,,,"/>
+<approved hash="104,1,134.62,15.24,IC7P,V-,-15V,,,"/>
+<approved hash="104,1,139.7,30.48,IC8P,V+,+15V,,,"/>
+<approved hash="104,1,139.7,15.24,IC8P,V-,-15V,,,"/>
 </errors>
 </schematic>
 </drawing>
