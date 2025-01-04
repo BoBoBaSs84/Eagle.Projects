@@ -17479,6 +17479,25 @@ NS Package M08A</description>
 <pin name="V+" x="-2.54" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
 <pin name="V-" x="-2.54" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
+<symbol name="OPAMP" urn="urn:adsk.eagle:symbol:16134/1" library_version="7">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+</symbol>
+<symbol name="PWR+-" urn="urn:adsk.eagle:symbol:16135/1" library_version="7">
+<text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
+<text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
+<pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="*741" urn="urn:adsk.eagle:component:16580/4" prefix="IC" library_version="7">
@@ -17529,6 +17548,77 @@ NS Package M08A</description>
 <attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 <technology name="UA">
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM358" urn="urn:adsk.eagle:component:16616/4" prefix="IC" library_version="7">
+<description>&lt;b&gt;OP AMP&lt;/b&gt; also LM158; LM258; LM2904&lt;p&gt;
+Source: http://cache.national.com/ds/LM/LM158.pdf</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="15.24" y="10.16" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="15.24" y="-12.7" swaplevel="1"/>
+<gate name="P" symbol="PWR+-" x="15.24" y="10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="N" package="DIL08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16409/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="7" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16404/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="POPULARITY" value="12" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="MX" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:16404/2"/>
+</package3dinstances>
+<technologies>
+<technology name="">
 <attribute name="POPULARITY" value="0" constant="no"/>
 </technology>
 </technologies>
@@ -17606,6 +17696,8 @@ NS Package M08A</description>
 <part name="P-11" library="bb84-supply" deviceset="-18V" device=""/>
 <part name="P+10" library="bb84-supply" deviceset="+15V" device=""/>
 <part name="P-10" library="bb84-supply" deviceset="-15V" device=""/>
+<part name="IC7" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
+<part name="IC8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 </parts>
 <sheets>
 <sheet>
@@ -17739,18 +17831,18 @@ NS Package M08A</description>
 <instance part="X3" gate="-4" x="241.3" y="162.56" smashed="yes" rot="MR0">
 <attribute name="NAME" x="242.57" y="163.449" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-5" x="236.22" y="55.88" smashed="yes" rot="MR0">
-<attribute name="NAME" x="237.49" y="56.769" size="1.778" layer="95" rot="MR180"/>
+<instance part="X3" gate="-5" x="129.54" y="114.3" smashed="yes" rot="MR0">
+<attribute name="NAME" x="130.81" y="115.189" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-6" x="236.22" y="50.8" smashed="yes" rot="MR0">
-<attribute name="NAME" x="237.49" y="51.689" size="1.778" layer="95" rot="MR180"/>
+<instance part="X3" gate="-6" x="157.48" y="86.36" smashed="yes" rot="MR0">
+<attribute name="NAME" x="158.75" y="87.249" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-7" x="236.22" y="45.72" smashed="yes" rot="MR0">
-<attribute name="NAME" x="237.49" y="46.609" size="1.778" layer="95" rot="MR180"/>
+<instance part="X3" gate="-7" x="187.96" y="111.76" smashed="yes" rot="MR0">
+<attribute name="NAME" x="189.23" y="112.649" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-8" x="236.22" y="40.64" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="236.22" y="43.18" size="1.778" layer="96" rot="MR0"/>
-<attribute name="NAME" x="237.49" y="41.529" size="1.778" layer="95" rot="MR180"/>
+<instance part="X3" gate="-8" x="205.74" y="86.36" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="99.06" y="218.44" size="1.778" layer="96" rot="MR0"/>
+<attribute name="NAME" x="207.01" y="87.249" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="P+8" gate="G$1" x="93.98" y="167.64" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="93.98" y="165.1" size="1.778" layer="96" rot="MR0"/>
@@ -17855,6 +17947,22 @@ NS Package M08A</description>
 </instance>
 <instance part="P-10" gate="G$1" x="58.42" y="106.68" smashed="yes" rot="R90">
 <attribute name="VALUE" x="58.42" y="104.14" size="1.778" layer="96"/>
+</instance>
+<instance part="IC7" gate="A" x="111.76" y="114.3" smashed="yes">
+<attribute name="NAME" x="114.3" y="117.475" size="1.778" layer="95"/>
+<attribute name="VALUE" x="114.3" y="109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="IC7" gate="B" x="139.7" y="86.36" smashed="yes">
+<attribute name="NAME" x="142.24" y="89.535" size="1.778" layer="95"/>
+<attribute name="VALUE" x="142.24" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="IC8" gate="A" x="170.18" y="111.76" smashed="yes">
+<attribute name="NAME" x="172.72" y="114.935" size="1.778" layer="95"/>
+<attribute name="VALUE" x="172.72" y="106.68" size="1.778" layer="96"/>
+</instance>
+<instance part="IC8" gate="B" x="187.96" y="86.36" smashed="yes">
+<attribute name="NAME" x="190.5" y="89.535" size="1.778" layer="95"/>
+<attribute name="VALUE" x="190.5" y="81.28" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18201,9 +18309,43 @@ NS Package M08A</description>
 <pinref part="P-10" gate="G$1" pin="-15V"/>
 </segment>
 </net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="IC7" gate="A" pin="OUT"/>
+<pinref part="X3" gate="-5" pin="KL"/>
+<wire x1="119.38" y1="114.3" x2="124.46" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="X3" gate="-6" pin="KL"/>
+<pinref part="IC7" gate="B" pin="OUT"/>
+<wire x1="152.4" y1="86.36" x2="147.32" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="IC8" gate="A" pin="OUT"/>
+<pinref part="X3" gate="-7" pin="KL"/>
+<wire x1="177.8" y1="111.76" x2="182.88" y2="111.76" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="IC8" gate="B" pin="OUT"/>
+<pinref part="X3" gate="-8" pin="KL"/>
+<wire x1="195.58" y1="86.36" x2="200.66" y2="86.36" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,165.1,160.02,IC4,V+,+18V,,,"/>
+<approved hash="104,1,165.1,144.78,IC4,V-,-18V,,,"/>
+<approved hash="104,1,215.9,160.02,IC3,V+,+18V,,,"/>
+<approved hash="104,1,215.9,144.78,IC3,V-,-18V,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
