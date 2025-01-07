@@ -17590,183 +17590,6 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="inductor-neosid" urn="urn:adsk.eagle:library:241">
-<description>&lt;b&gt;Neosid Chokes and Transformers&lt;/b&gt;&lt;p&gt;
-
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Electronic Component Book, Part 2 : Chokes, Fixed Value Inductors
-&lt;li&gt;Part 3 : Filters, Coil Assemblies, Thermoplastic Parts
-&lt;li&gt;Part 4 : SMD Filters, Coils, Fixed Value Inductors
-&lt;li&gt;www.neosid.de
-&lt;/ul&gt;
- &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SD12-680" urn="urn:adsk.eagle:footprint:14509/1" library_version="3">
-<description>NOMINAL &lt;b&gt;INDUCTANCE&lt;/b&gt;&lt;p&gt;
-up to 680 µH, grid 10 mm, diameter 12.5 mm, height 20 mm</description>
-<wire x1="-1.1" y1="-1.55" x2="1.1" y2="-1.55" width="0.1524" layer="51"/>
-<wire x1="1.1" y1="-1.55" x2="1.1" y2="1.55" width="0.1524" layer="51"/>
-<wire x1="1.1" y1="1.55" x2="-1.1" y2="1.55" width="0.1524" layer="51"/>
-<wire x1="-1.1" y1="1.55" x2="-1.1" y2="-1.55" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="5.9" width="0.2032" layer="21"/>
-<pad name="1" x="-5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="5" y="0" drill="1.1" shape="long" rot="R90"/>
-<text x="3.727" y="5.048" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="SD12K-82" urn="urn:adsk.eagle:footprint:14510/1" library_version="3">
-<description>NOMINAL &lt;b&gt;INDUCTANCE&lt;/b&gt;&lt;p&gt;
-up to 82 µH, grid 10 mm, diameter 12 mm, height 13 mm</description>
-<circle x="0" y="0" radius="5.9" width="0.2032" layer="21"/>
-<pad name="1" x="-5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="5" y="0" drill="1.1" shape="long" rot="R90"/>
-<text x="3.981" y="4.794" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="SD12K100" urn="urn:adsk.eagle:footprint:14511/1" library_version="3">
-<description>NOMINAL &lt;b&gt;INDUCTANCE&lt;/b&gt;&lt;p&gt;
-over 82 µH, grid 5 mm, diameter 10.5 mm, height 13 mm</description>
-<circle x="0" y="0" radius="5.15" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<text x="3.473" y="4.286" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-<package name="SD12_1000" urn="urn:adsk.eagle:footprint:14512/1" library_version="3">
-<description>NOMINAL &lt;b&gt;INDUCTANCE&lt;/b&gt;&lt;p&gt;
-over 680 µH, grid 5 mm, diameter 12.5 mm, height 20 mm</description>
-<circle x="0" y="0" radius="6.15" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="5.45" width="0.2032" layer="21"/>
-<pad name="1" x="-2.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="2" x="2.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<text x="3.981" y="5.175" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.25" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<packages3d>
-<package3d name="SD12-680" urn="urn:adsk.eagle:package:14657/1" type="box" library_version="3">
-<description>NOMINAL INDUCTANCE
-up to 680 µH, grid 10 mm, diameter 12.5 mm, height 20 mm</description>
-<packageinstances>
-<packageinstance name="SD12-680"/>
-</packageinstances>
-</package3d>
-<package3d name="SD12K-82" urn="urn:adsk.eagle:package:14647/1" type="box" library_version="3">
-<description>NOMINAL INDUCTANCE
-up to 82 µH, grid 10 mm, diameter 12 mm, height 13 mm</description>
-<packageinstances>
-<packageinstance name="SD12K-82"/>
-</packageinstances>
-</package3d>
-<package3d name="SD12K100" urn="urn:adsk.eagle:package:14651/1" type="box" library_version="3">
-<description>NOMINAL INDUCTANCE
-over 82 µH, grid 5 mm, diameter 10.5 mm, height 13 mm</description>
-<packageinstances>
-<packageinstance name="SD12K100"/>
-</packageinstances>
-</package3d>
-<package3d name="SD12_1000" urn="urn:adsk.eagle:package:14646/1" type="box" library_version="3">
-<description>NOMINAL INDUCTANCE
-over 680 µH, grid 5 mm, diameter 12.5 mm, height 20 mm</description>
-<packageinstances>
-<packageinstance name="SD12_1000"/>
-</packageinstances>
-</package3d>
-</packages3d>
-<symbols>
-<symbol name="L" urn="urn:adsk.eagle:symbol:14504/1" library_version="3">
-<text x="-3.81" y="1.778" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.556" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="94"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SD12" urn="urn:adsk.eagle:component:14737/2" prefix="L" uservalue="yes" library_version="3">
-<description>&lt;b&gt;INDUCTOR&lt;/b&gt;&lt;p&gt;
-nominal inductance</description>
-<gates>
-<gate name="G$1" symbol="L" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-680" package="SD12-680">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14657/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="BUSSMANN" constant="no"/>
-<attribute name="MPN" value="SD12-680" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="19K7201" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="K-82" package="SD12K-82">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14647/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="K100" package="SD12K100">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14651/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-1000" package="SD12_1000">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:14646/1"/>
-</package3dinstances>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="bb84-supply">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -17862,6 +17685,45 @@ nominal inductance</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="bb84">
+<packages>
+<package name="IND-120">
+<circle x="0" y="0" radius="6" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="5" width="0.1" layer="21"/>
+<pad name="P$1" x="-3.5" y="0" drill="0.6" shape="octagon"/>
+<pad name="P$2" x="3.5" y="0" drill="0.6" shape="octagon"/>
+<text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="INDUCTOR">
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<rectangle x1="-3.81" y1="-1.27" x2="3.81" y2="1.27" layer="94"/>
+<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="IND-120-330K">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="IND-120">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -17885,15 +17747,15 @@ nominal inductance</description>
 <part name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="050-024X044" package3d_urn="urn:adsk.eagle:package:23643/1" value="1.2nF"/>
 <part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="L1" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="-680" package3d_urn="urn:adsk.eagle:package:14657/1" value="33µH"/>
+<part name="L1" library="bb84" deviceset="IND-120-330K" device="" value="33µH"/>
 <part name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="220µF"/>
 <part name="X2" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-03P" device="" package3d_urn="urn:adsk.eagle:package:10737/1" value="OUT"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC2" library="national-semiconductor" library_urn="urn:adsk.eagle:library:307" deviceset="LM2596" device="T" package3d_urn="urn:adsk.eagle:package:21216/1"/>
-<part name="L2" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="-680" package3d_urn="urn:adsk.eagle:package:14657/1" value="47µH"/>
+<part name="L2" library="bb84" deviceset="IND-120-330K" device="" value="33µH"/>
 <part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="D4" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="SCHOTTKY-DIODE" device="C4111-15" package3d_urn="urn:adsk.eagle:package:43355/2" value="1N5822"/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="330µF"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E3.5-8" package3d_urn="urn:adsk.eagle:package:23360/2" value="470µF"/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.09k"/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
