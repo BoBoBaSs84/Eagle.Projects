@@ -8,20 +8,20 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -30,8 +30,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -39,12 +39,12 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -17966,24 +17966,19 @@ nominal inductance</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.32k"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.99k"/>
 <part name="P+8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.32k"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.99k"/>
 <part name="P+12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="R8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.32k"/>
 <part name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.99k"/>
 <part name="P+13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="10k"/>
 <part name="R11" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.32k"/>
 <part name="R12" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="4.99k"/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC3" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM2574?-*" device="N" package3d_urn="urn:adsk.eagle:package:16409/2" technology="5.0"/>
-<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C13" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="22µF"/>
 <part name="P+9" library="bb84-supply" deviceset="+20V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -17991,10 +17986,7 @@ nominal inductance</description>
 <part name="L1" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="K100" package3d_urn="urn:adsk.eagle:package:14651/1" value="68µH"/>
 <part name="C14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="470µF"/>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND12" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND13" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC4" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM2574?-*" device="N" package3d_urn="urn:adsk.eagle:package:16409/2" technology="5.0"/>
-<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="22µF"/>
 <part name="P+15" library="bb84-supply" deviceset="+20V" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18002,11 +17994,13 @@ nominal inductance</description>
 <part name="L2" library="inductor-neosid" library_urn="urn:adsk.eagle:library:241" deviceset="SD12" device="K100" package3d_urn="urn:adsk.eagle:package:14651/1" value="68µH"/>
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2-5" package3d_urn="urn:adsk.eagle:package:23346/2" value="470µF"/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
-<part name="GND14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="GND15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC7" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 <part name="IC8" library="linear" library_urn="urn:adsk.eagle:library:262" deviceset="LM358" device="N" package3d_urn="urn:adsk.eagle:package:16409/2"/>
 <part name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="MCU-OUT"/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="GND9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18194,10 +18188,7 @@ nominal inductance</description>
 <attribute name="VALUE" x="176.53" y="154.178" size="1.778" layer="96"/>
 </instance>
 <instance part="P+8" gate="VCC" x="190.5" y="165.1" smashed="yes" rot="R270">
-<attribute name="VALUE" x="190.5" y="167.64" size="1.778" layer="96"/>
-</instance>
-<instance part="GND2" gate="1" x="190.5" y="157.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="190.5" y="160.02" size="1.778" layer="96"/>
+<attribute name="VALUE" x="190.5" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="165.1" y="147.32" smashed="yes">
 <attribute name="NAME" x="161.29" y="148.8186" size="1.778" layer="95"/>
@@ -18212,10 +18203,7 @@ nominal inductance</description>
 <attribute name="VALUE" x="176.53" y="136.398" size="1.778" layer="96"/>
 </instance>
 <instance part="P+12" gate="VCC" x="190.5" y="147.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="190.5" y="149.86" size="1.778" layer="96"/>
-</instance>
-<instance part="GND3" gate="1" x="190.5" y="139.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="190.5" y="142.24" size="1.778" layer="96"/>
+<attribute name="VALUE" x="190.5" y="144.78" size="1.778" layer="96"/>
 </instance>
 <instance part="R7" gate="G$1" x="213.36" y="165.1" smashed="yes">
 <attribute name="NAME" x="209.55" y="166.5986" size="1.778" layer="95"/>
@@ -18230,10 +18218,7 @@ nominal inductance</description>
 <attribute name="VALUE" x="224.79" y="154.178" size="1.778" layer="96"/>
 </instance>
 <instance part="P+13" gate="VCC" x="238.76" y="165.1" smashed="yes" rot="R270">
-<attribute name="VALUE" x="238.76" y="167.64" size="1.778" layer="96"/>
-</instance>
-<instance part="GND4" gate="1" x="238.76" y="157.48" smashed="yes" rot="R90">
-<attribute name="VALUE" x="238.76" y="160.02" size="1.778" layer="96"/>
+<attribute name="VALUE" x="238.76" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="213.36" y="147.32" smashed="yes">
 <attribute name="NAME" x="209.55" y="148.8186" size="1.778" layer="95"/>
@@ -18248,27 +18233,21 @@ nominal inductance</description>
 <attribute name="VALUE" x="224.79" y="136.398" size="1.778" layer="96"/>
 </instance>
 <instance part="P+14" gate="VCC" x="238.76" y="147.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="238.76" y="149.86" size="1.778" layer="96"/>
-</instance>
-<instance part="GND6" gate="1" x="238.76" y="139.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="238.76" y="142.24" size="1.778" layer="96"/>
+<attribute name="VALUE" x="238.76" y="144.78" size="1.778" layer="96"/>
 </instance>
 <instance part="IC3" gate="G$1" x="33.02" y="119.38" smashed="yes">
 <attribute name="NAME" x="25.4" y="130.81" size="1.778" layer="95"/>
 <attribute name="VALUE" x="35.56" y="130.81" size="1.778" layer="96"/>
 </instance>
-<instance part="GND8" gate="1" x="30.48" y="99.06" smashed="yes">
-<attribute name="VALUE" x="27.94" y="96.52" size="1.778" layer="96"/>
-</instance>
-<instance part="C13" gate="G$1" x="17.78" y="121.92" smashed="yes">
-<attribute name="NAME" x="18.923" y="122.4026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="18.923" y="117.3226" size="1.778" layer="96"/>
+<instance part="C13" gate="G$1" x="17.78" y="116.84" smashed="yes">
+<attribute name="NAME" x="18.923" y="117.3226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="18.923" y="112.2426" size="1.778" layer="96"/>
 </instance>
 <instance part="P+9" gate="G$1" x="12.7" y="127" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="12.7" y="124.46" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND10" gate="1" x="17.78" y="111.76" smashed="yes">
-<attribute name="VALUE" x="15.24" y="109.22" size="1.778" layer="96"/>
+<instance part="GND10" gate="1" x="17.78" y="99.06" smashed="yes">
+<attribute name="VALUE" x="15.24" y="96.52" size="1.778" layer="96"/>
 </instance>
 <instance part="D1" gate="G$1" x="45.72" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.815" y="112.014" size="1.778" layer="95" rot="R90"/>
@@ -18282,31 +18261,22 @@ nominal inductance</description>
 <attribute name="NAME" x="64.643" y="117.3226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="64.643" y="112.2426" size="1.778" layer="96"/>
 </instance>
-<instance part="P+16" gate="VCC" x="68.58" y="124.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="68.58" y="127" size="1.778" layer="96"/>
-</instance>
-<instance part="GND12" gate="1" x="45.72" y="106.68" smashed="yes">
-<attribute name="VALUE" x="43.18" y="104.14" size="1.778" layer="96"/>
-</instance>
-<instance part="GND13" gate="1" x="63.5" y="106.68" smashed="yes">
-<attribute name="VALUE" x="60.96" y="104.14" size="1.778" layer="96"/>
+<instance part="P+16" gate="VCC" x="68.58" y="127" smashed="yes" rot="R270">
+<attribute name="VALUE" x="68.58" y="124.46" size="1.778" layer="96"/>
 </instance>
 <instance part="IC4" gate="G$1" x="101.6" y="119.38" smashed="yes">
 <attribute name="NAME" x="93.98" y="130.81" size="1.778" layer="95"/>
 <attribute name="VALUE" x="104.14" y="130.81" size="1.778" layer="96"/>
 </instance>
-<instance part="GND9" gate="1" x="99.06" y="99.06" smashed="yes">
-<attribute name="VALUE" x="96.52" y="96.52" size="1.778" layer="96"/>
-</instance>
-<instance part="C15" gate="G$1" x="86.36" y="121.92" smashed="yes">
-<attribute name="NAME" x="87.503" y="122.4026" size="1.778" layer="95"/>
-<attribute name="VALUE" x="87.503" y="117.3226" size="1.778" layer="96"/>
+<instance part="C15" gate="G$1" x="86.36" y="116.84" smashed="yes">
+<attribute name="NAME" x="87.503" y="117.3226" size="1.778" layer="95"/>
+<attribute name="VALUE" x="87.503" y="112.2426" size="1.778" layer="96"/>
 </instance>
 <instance part="P+15" gate="G$1" x="81.28" y="127" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="81.28" y="124.46" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND11" gate="1" x="86.36" y="111.76" smashed="yes">
-<attribute name="VALUE" x="83.82" y="109.22" size="1.778" layer="96"/>
+<instance part="GND11" gate="1" x="86.36" y="99.06" smashed="yes">
+<attribute name="VALUE" x="83.82" y="96.52" size="1.778" layer="96"/>
 </instance>
 <instance part="D2" gate="G$1" x="114.3" y="114.3" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.395" y="112.014" size="1.778" layer="95" rot="R90"/>
@@ -18320,14 +18290,8 @@ nominal inductance</description>
 <attribute name="NAME" x="133.223" y="117.3226" size="1.778" layer="95"/>
 <attribute name="VALUE" x="133.223" y="112.2426" size="1.778" layer="96"/>
 </instance>
-<instance part="P+17" gate="VCC" x="137.16" y="124.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="137.16" y="127" size="1.778" layer="96"/>
-</instance>
-<instance part="GND14" gate="1" x="114.3" y="106.68" smashed="yes">
-<attribute name="VALUE" x="111.76" y="104.14" size="1.778" layer="96"/>
-</instance>
-<instance part="GND15" gate="1" x="132.08" y="106.68" smashed="yes">
-<attribute name="VALUE" x="129.54" y="104.14" size="1.778" layer="96"/>
+<instance part="P+17" gate="VCC" x="137.16" y="127" smashed="yes" rot="R270">
+<attribute name="VALUE" x="137.16" y="124.46" size="1.778" layer="96"/>
 </instance>
 <instance part="IC7" gate="A" x="165.1" y="116.84" smashed="yes">
 <attribute name="NAME" x="167.64" y="120.015" size="1.778" layer="95"/>
@@ -18357,6 +18321,18 @@ nominal inductance</description>
 <instance part="X4" gate="-4" x="93.98" y="15.24" smashed="yes">
 <attribute name="VALUE" x="93.98" y="33.02" size="1.778" layer="96"/>
 <attribute name="NAME" x="92.71" y="16.129" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="GND8" gate="1" x="187.96" y="152.4" smashed="yes">
+<attribute name="VALUE" x="185.42" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="187.96" y="134.62" smashed="yes">
+<attribute name="VALUE" x="185.42" y="132.08" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="236.22" y="152.4" smashed="yes">
+<attribute name="VALUE" x="233.68" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="236.22" y="134.62" smashed="yes">
+<attribute name="VALUE" x="233.68" y="132.08" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -18431,25 +18407,33 @@ nominal inductance</description>
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="157.48" x2="187.96" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="187.96" y1="157.48" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="185.42" y1="139.7" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="GND3" gate="1" pin="GND"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="187.96" y1="137.16" x2="187.96" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="157.48" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="236.22" y1="154.94" x2="236.22" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="233.68" y1="139.7" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="GND6" gate="1" pin="GND"/>
+<pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="236.22" y1="137.16" x2="236.22" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="C13" gate="G$1" pin="-"/>
+<wire x1="17.78" y1="111.76" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="!ON/OFF"/>
+<wire x1="17.78" y1="104.14" x2="17.78" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="106.68" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="GNDSIG"/>
@@ -18458,23 +18442,17 @@ nominal inductance</description>
 <pinref part="IC3" gate="G$1" pin="GND@PWR"/>
 <wire x1="30.48" y1="106.68" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
 <junction x="30.48" y="104.14"/>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="30.48" y1="104.14" x2="30.48" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C13" gate="G$1" pin="-"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-<wire x1="17.78" y1="116.84" x2="17.78" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="27.94" y1="104.14" x2="17.78" y2="104.14" width="0.1524" layer="91"/>
+<junction x="27.94" y="104.14"/>
+<junction x="17.78" y="104.14"/>
 <pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="45.72" y1="109.22" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="45.72" y1="104.14" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<junction x="33.02" y="104.14"/>
 <pinref part="C14" gate="G$1" pin="-"/>
-<wire x1="63.5" y1="109.22" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="104.14" x2="63.5" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
+<junction x="45.72" y="104.14"/>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="!ON/OFF"/>
@@ -18486,23 +18464,21 @@ nominal inductance</description>
 <pinref part="IC4" gate="G$1" pin="GND@PWR"/>
 <wire x1="99.06" y1="106.68" x2="99.06" y2="104.14" width="0.1524" layer="91"/>
 <junction x="99.06" y="104.14"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="99.06" y1="104.14" x2="99.06" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C15" gate="G$1" pin="-"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="86.36" y1="116.84" x2="86.36" y2="114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="86.36" y1="111.76" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="104.14" x2="86.36" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="104.14" x2="86.36" y2="104.14" width="0.1524" layer="91"/>
+<junction x="96.52" y="104.14"/>
+<junction x="86.36" y="104.14"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<wire x1="114.3" y1="109.22" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="114.3" y1="104.14" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="104.14" x2="114.3" y2="104.14" width="0.1524" layer="91"/>
+<junction x="101.6" y="104.14"/>
+<junction x="114.3" y="104.14"/>
 <pinref part="C16" gate="G$1" pin="-"/>
-<wire x1="132.08" y1="109.22" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="104.14" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="104.14" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="-20V" class="0">
@@ -18546,7 +18522,7 @@ nominal inductance</description>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="+"/>
-<wire x1="17.78" y1="124.46" x2="17.78" y2="127" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="119.38" x2="17.78" y2="127" width="0.1524" layer="91"/>
 <pinref part="P+9" gate="G$1" pin="+20V"/>
 <wire x1="17.78" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="IN"/>
@@ -18555,7 +18531,7 @@ nominal inductance</description>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="+"/>
-<wire x1="86.36" y1="124.46" x2="86.36" y2="127" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="119.38" x2="86.36" y2="127" width="0.1524" layer="91"/>
 <pinref part="P+15" gate="G$1" pin="+20V"/>
 <wire x1="86.36" y1="127" x2="83.82" y2="127" width="0.1524" layer="91"/>
 <pinref part="IC4" gate="G$1" pin="IN"/>
@@ -18720,7 +18696,6 @@ nominal inductance</description>
 <segment>
 <pinref part="P+16" gate="VCC" pin="VCC"/>
 <pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="66.04" y1="124.46" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C14" gate="G$1" pin="+"/>
 <wire x1="63.5" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="124.46" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
@@ -18728,11 +18703,12 @@ nominal inductance</description>
 <pinref part="IC3" gate="G$1" pin="FB"/>
 <wire x1="43.18" y1="127" x2="63.5" y2="127" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="127" x2="63.5" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="127" x2="66.04" y2="127" width="0.1524" layer="91"/>
+<junction x="63.5" y="127"/>
 </segment>
 <segment>
 <pinref part="P+17" gate="VCC" pin="VCC"/>
 <pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="124.46" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="+"/>
 <wire x1="132.08" y1="124.46" x2="129.54" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="124.46" x2="132.08" y2="119.38" width="0.1524" layer="91"/>
@@ -18740,6 +18716,8 @@ nominal inductance</description>
 <pinref part="IC4" gate="G$1" pin="FB"/>
 <wire x1="111.76" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="127" x2="132.08" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="127" x2="132.08" y2="127" width="0.1524" layer="91"/>
+<junction x="132.08" y="127"/>
 </segment>
 </net>
 <net name="N$2" class="0">
