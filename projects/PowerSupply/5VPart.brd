@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mm"/>
+<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.2" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1414,8 +1414,8 @@ Grid 5.08 mm&lt;p&gt;
 <package name="IND-120">
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="5" width="0.1" layer="21"/>
-<pad name="P$1" x="-3.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="P$2" x="3.5" y="0" drill="1.1" shape="long" rot="R90"/>
+<pad name="P$1" x="-3.5" y="0" drill="1.6" shape="long" rot="R90"/>
+<pad name="P$2" x="3.5" y="0" drill="1.6" shape="long" rot="R90"/>
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>

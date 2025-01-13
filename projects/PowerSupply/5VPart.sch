@@ -17690,8 +17690,8 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 <package name="IND-120">
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="5" width="0.1" layer="21"/>
-<pad name="P$1" x="-3.5" y="0" drill="1.1" shape="long" rot="R90"/>
-<pad name="P$2" x="3.5" y="0" drill="1.1" shape="long" rot="R90"/>
+<pad name="P$1" x="-3.5" y="0" drill="1.6" shape="long" rot="R90"/>
+<pad name="P$2" x="3.5" y="0" drill="1.6" shape="long" rot="R90"/>
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
