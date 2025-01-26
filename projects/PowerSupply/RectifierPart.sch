@@ -11206,8 +11206,7 @@ Grid 5.08 mm&lt;p&gt;
 </sheet>
 </sheets>
 <errors>
-<approved hash="106,1,38.1,63.5,PE,,,,,"/>
-<approved hash="106,1,35.56,71.12,PE,,,,,"/>
+<approved hash="113,1,130.071,89.431,FRAME1,,,,,"/>
 </errors>
 </schematic>
 </drawing>
