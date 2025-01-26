@@ -10273,12 +10273,22 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="0" y1="5.6" x2="32" y2="5.6" width="0.127" layer="21"/>
 <wire x1="32" y1="5.6" x2="32" y2="0" width="0.127" layer="21"/>
 <wire x1="32" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<pad name="+VDC" x="3.5" y="2.8" drill="1.3" shape="long"/>
-<pad name="VAC1" x="13.5" y="2.8" drill="1.3" shape="long"/>
-<pad name="VAC2" x="21" y="2.8" drill="1.3" shape="long"/>
-<pad name="-VDC" x="28.5" y="2.8" drill="1.3" shape="long"/>
+<pad name="+VDC" x="3.5" y="2.8" drill="1.4" shape="long"/>
+<pad name="VAC1" x="13.5" y="2.8" drill="1.4" shape="long"/>
+<pad name="VAC2" x="21" y="2.8" drill="1.4" shape="long"/>
+<pad name="-VDC" x="28.5" y="2.8" drill="1.4" shape="long"/>
 <text x="0" y="6.35" size="1.27" layer="25">&gt;NAME</text>
 <text x="0" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="B57364S0">
+<pad name="P$1" x="-3.25" y="0" drill="1.1" shape="long" rot="R90"/>
+<pad name="P$2" x="3.25" y="0" drill="1.1" shape="long" rot="R90"/>
+<wire x1="-7" y1="-3.5" x2="7" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="3.5" x2="7" y2="3.5" width="0.127" layer="21"/>
+<wire x1="-7" y1="-3.5" x2="-7" y2="3.5" width="0.127" layer="21" curve="-180"/>
+<wire x1="7" y1="3.5" x2="7" y2="-3.5" width="0.127" layer="21" curve="-180"/>
+<text x="-7" y="4" size="1.27" layer="25">&gt;NAME</text>
+<text x="7" y="-4" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10304,6 +10314,34 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="-0.635" y1="0" x2="-0.635" y2="1.27" width="0.254" layer="94"/>
 <wire x1="0.635" y1="1.27" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-0.635" y1="0" x2="-1.905" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="NTC">
+<wire x1="3.175" y1="6.35" x2="3.175" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="3.175" y1="3.81" x2="3.556" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="3.556" y1="5.08" x2="2.794" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.794" y1="5.08" x2="3.175" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="3.81" x2="1.905" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="6.35" x2="2.286" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="5.08" x2="1.524" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="5.08" x2="1.905" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="2.413" y1="0.381" x2="3.937" y2="0.381" width="0.1524" layer="94" curve="180"/>
+<wire x1="1.905" y1="0.635" x2="2.413" y2="0.635" width="0.1524" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.413" y1="0.381" x2="2.413" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="3.937" y1="0.381" x2="3.937" y2="1.651" width="0.1524" layer="94"/>
+<wire x1="3.429" y1="1.143" x2="3.937" y2="1.651" width="0.1524" layer="94" curve="-270"/>
+<wire x1="4.191" y1="1.143" x2="4.3047" y2="0.9591" width="0.1524" layer="94" curve="-116.545417" cap="flat"/>
+<wire x1="3.429" y1="1.143" x2="4.191" y2="1.143" width="0.1524" layer="94"/>
+<wire x1="0.889" y1="-2.54" x2="0.889" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-0.889" y1="2.54" x2="-0.889" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0.889" y1="2.54" x2="-0.889" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.889" y1="-2.54" x2="-0.889" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.524" y1="1.524" x2="-1.778" y2="-1.778" width="0.1524" layer="94"/>
+<wire x1="-1.778" y1="-1.778" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.921" y1="-3.048" x2="-1.651" y2="-3.048" width="0.1524" layer="94"/>
+<text x="2.032" y="-2.8194" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.032" y="-5.207" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="1" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -10348,6 +10386,22 @@ Grid 5.08 mm&lt;p&gt;
 <connect gate="G$1" pin="-VDC" pad="-VDC"/>
 <connect gate="G$1" pin="VAC1" pad="VAC1"/>
 <connect gate="G$1" pin="VAC2" pad="VAC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPCB57364-S259" prefix="RX" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="NTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B57364S0">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -10493,64 +10547,6 @@ Grid 5.08 mm&lt;p&gt;
 </deviceset>
 </devicesets>
 </library>
-<library name="ptc-ntc" urn="urn:adsk.eagle:library:332">
-<description>&lt;b&gt;PTC and NTC Resistors&lt;/b&gt;&lt;p&gt;
-Siemens, Philips, Valvo&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-</packages>
-<symbols>
-<symbol name="PTC-DUMMY" urn="urn:adsk.eagle:symbol:22759/1" library_version="2">
-<wire x1="2.54" y1="0.889" x2="-2.54" y2="0.889" width="0.254" layer="95"/>
-<wire x1="-2.54" y1="-0.889" x2="2.54" y2="-0.889" width="0.254" layer="95"/>
-<wire x1="-2.54" y1="0.889" x2="-2.54" y2="0" width="0.254" layer="95"/>
-<wire x1="-2.54" y1="0" x2="-2.54" y2="-0.889" width="0.254" layer="95"/>
-<wire x1="2.54" y1="0.889" x2="2.54" y2="0" width="0.254" layer="95"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-0.889" width="0.254" layer="95"/>
-<wire x1="1.27" y1="1.778" x2="-1.27" y2="-1.778" width="0.1524" layer="95"/>
-<wire x1="-1.27" y1="-1.778" x2="-2.286" y2="-1.778" width="0.1524" layer="95"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="1.27" width="0.1524" layer="95"/>
-<wire x1="3.302" y1="2.54" x2="3.302" y2="1.27" width="0.1524" layer="95"/>
-<wire x1="-1.0668" y1="2.1336" x2="-0.762" y2="2.159" width="0.1524" layer="95" curve="-143.401004"/>
-<wire x1="-0.762" y1="2.159" x2="-0.635" y2="1.651" width="0.1524" layer="95" curve="16.281888"/>
-<wire x1="-0.635" y1="1.651" x2="-0.0508" y2="1.5494" width="0.1524" layer="95" curve="135.668554"/>
-<wire x1="-0.0508" y1="1.5494" x2="-0.127" y2="2.921" width="0.1524" layer="95" curve="65.705733"/>
-<wire x1="-0.127" y1="2.921" x2="-0.381" y2="2.794" width="0.1524" layer="95" curve="139.383116"/>
-<wire x1="-0.381" y1="2.794" x2="0.381" y2="2.286" width="0.1524" layer="95" curve="100.176187"/>
-<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="95"/>
-<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="95"/>
-<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
-<text x="-3.81" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<polygon width="0.1524" layer="95">
-<vertex x="2.54" y="2.54"/>
-<vertex x="2.794" y="1.778"/>
-<vertex x="2.286" y="1.778"/>
-</polygon>
-<polygon width="0.1524" layer="95">
-<vertex x="3.302" y="2.54"/>
-<vertex x="3.556" y="1.778"/>
-<vertex x="3.048" y="1.778"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="PTC-DUMMY" urn="urn:adsk.eagle:component:22766/2" prefix="RX" library_version="2">
-<description>PTC Dummy&lt;p&gt;</description>
-<gates>
-<gate name="G$1" symbol="PTC-DUMMY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name="">
-<attribute name="POPULARITY" value="0" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="bb84-supply">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -10629,7 +10625,6 @@ Siemens, Philips, Valvo&lt;p&gt;
 <part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
 <part name="D1" library="bb84" deviceset="B40C5000-3300A" device="" value="B40C5000-3300A"/>
 <part name="K1" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G2R2" device="" package3d_urn="urn:adsk.eagle:package:24328/1"/>
-<part name="RX1" library="ptc-ntc" library_urn="urn:adsk.eagle:library:332" deviceset="PTC-DUMMY" device=""/>
 <part name="D2" library="bb84" deviceset="B40C5000-3300A" device="" value="B40C5000-3300A"/>
 <part name="X1" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="LINE-IN"/>
 <part name="F3" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="SH22,5A" device="" package3d_urn="urn:adsk.eagle:package:14070/1" value="6.3AT"/>
@@ -10642,15 +10637,16 @@ Siemens, Philips, Valvo&lt;p&gt;
 <part name="F4" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="SH22,5A" device="" package3d_urn="urn:adsk.eagle:package:14070/1" value="1.6AT"/>
 <part name="X5" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="T2-PRI"/>
 <part name="K2" library="relay" library_urn="urn:adsk.eagle:library:339" deviceset="G2R2" device="" package3d_urn="urn:adsk.eagle:package:24328/1"/>
-<part name="RX2" library="ptc-ntc" library_urn="urn:adsk.eagle:library:332" deviceset="PTC-DUMMY" device=""/>
 <part name="P+3" library="bb84-supply" deviceset="+230VAC" device=""/>
 <part name="P-3" library="bb84-supply" deviceset="-230VAC" device=""/>
 <part name="X6" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="T2-SEC"/>
 <part name="F5" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="SH22,5A" device="" package3d_urn="urn:adsk.eagle:package:14070/1" value="12AT"/>
-<part name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="R1-OUT"/>
+<part name="X7" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-04P" device="" package3d_urn="urn:adsk.eagle:package:10735/1" value="R2-OUT"/>
 <part name="D3" library="bb84" deviceset="B40C5000-3300A" device="" value="B40C5000-3300A"/>
-<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
-<part name="C10" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E7.5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF"/>
+<part name="RX1" library="bb84" deviceset="EPCB57364-S259" device="" value="B57364-S259"/>
+<part name="RX2" library="bb84" deviceset="EPCB57364-S259" device="" value="B57364-S259"/>
 </parts>
 <sheets>
 <sheet>
@@ -10698,18 +10694,18 @@ Siemens, Philips, Valvo&lt;p&gt;
 <attribute name="VALUE" x="76.2" y="142.24" size="1.778" layer="96"/>
 <attribute name="NAME" x="77.47" y="148.209" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="X3" gate="-1" x="172.72" y="165.1" smashed="yes">
-<attribute name="NAME" x="171.45" y="165.989" size="1.778" layer="95" rot="R180"/>
+<instance part="X3" gate="-1" x="175.26" y="165.1" smashed="yes">
+<attribute name="NAME" x="173.99" y="165.989" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X3" gate="-2" x="172.72" y="160.02" smashed="yes">
-<attribute name="NAME" x="171.45" y="160.909" size="1.778" layer="95" rot="R180"/>
+<instance part="X3" gate="-2" x="175.26" y="160.02" smashed="yes">
+<attribute name="NAME" x="173.99" y="160.909" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X3" gate="-3" x="172.72" y="154.94" smashed="yes">
-<attribute name="NAME" x="171.45" y="155.829" size="1.778" layer="95" rot="R180"/>
+<instance part="X3" gate="-3" x="175.26" y="154.94" smashed="yes">
+<attribute name="NAME" x="173.99" y="155.829" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="X3" gate="-4" x="172.72" y="149.86" smashed="yes">
-<attribute name="VALUE" x="172.72" y="144.78" size="1.778" layer="96"/>
-<attribute name="NAME" x="171.45" y="150.749" size="1.778" layer="95" rot="R180"/>
+<instance part="X3" gate="-4" x="175.26" y="149.86" smashed="yes">
+<attribute name="VALUE" x="175.26" y="144.78" size="1.778" layer="96"/>
+<attribute name="NAME" x="173.99" y="150.749" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="C1" gate="G$1" x="226.06" y="165.1" smashed="yes">
 <attribute name="NAME" x="227.203" y="165.5826" size="1.778" layer="95"/>
@@ -10723,19 +10719,12 @@ Siemens, Philips, Valvo&lt;p&gt;
 <attribute name="NAME" x="203.2" y="168.91" size="1.778" layer="95"/>
 <attribute name="VALUE" x="198.12" y="154.94" size="1.778" layer="96"/>
 </instance>
-<instance part="K1" gate="1" x="48.26" y="147.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="51.181" y="146.05" size="1.778" layer="96" rot="R270"/>
-<attribute name="PART" x="53.34" y="146.05" size="1.778" layer="95" rot="R270"/>
+<instance part="K1" gate="1" x="50.8" y="139.7" smashed="yes">
+<attribute name="VALUE" x="52.07" y="135.001" size="1.778" layer="96"/>
+<attribute name="PART" x="46.99" y="144.78" size="1.778" layer="95"/>
 </instance>
-<instance part="K1" gate="2" x="55.88" y="152.4" smashed="yes">
-<attribute name="PART" x="58.42" y="152.4" size="1.778" layer="95"/>
-</instance>
-<instance part="K1" gate="3" x="149.86" y="12.7" smashed="yes">
-<attribute name="PART" x="152.4" y="12.7" size="1.778" layer="95"/>
-</instance>
-<instance part="RX1" gate="G$1" x="55.88" y="162.56" smashed="yes">
-<attribute name="NAME" x="52.07" y="166.37" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="158.75" size="1.778" layer="96"/>
+<instance part="K1" gate="2" x="50.8" y="152.4" smashed="yes">
+<attribute name="PART" x="53.34" y="152.4" size="1.778" layer="95"/>
 </instance>
 <instance part="D2" gate="G$1" x="208.28" y="144.78" smashed="yes">
 <attribute name="NAME" x="203.2" y="151.13" size="1.778" layer="95"/>
@@ -10804,16 +10793,12 @@ Siemens, Philips, Valvo&lt;p&gt;
 <attribute name="VALUE" x="76.2" y="99.06" size="1.778" layer="96"/>
 <attribute name="NAME" x="77.47" y="105.029" size="1.778" layer="95" rot="MR180"/>
 </instance>
-<instance part="K2" gate="1" x="48.26" y="104.14" smashed="yes" rot="R270">
-<attribute name="VALUE" x="51.181" y="102.87" size="1.778" layer="96" rot="R270"/>
-<attribute name="PART" x="53.34" y="102.87" size="1.778" layer="95" rot="R270"/>
+<instance part="K2" gate="1" x="50.8" y="96.52" smashed="yes">
+<attribute name="VALUE" x="52.07" y="89.281" size="1.778" layer="96"/>
+<attribute name="PART" x="46.99" y="101.6" size="1.778" layer="95"/>
 </instance>
-<instance part="K2" gate="2" x="55.88" y="109.22" smashed="yes">
-<attribute name="PART" x="58.42" y="109.22" size="1.778" layer="95"/>
-</instance>
-<instance part="RX2" gate="G$1" x="55.88" y="119.38" smashed="yes">
-<attribute name="NAME" x="52.07" y="123.19" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="115.57" size="1.778" layer="96"/>
+<instance part="K2" gate="2" x="50.8" y="109.22" smashed="yes">
+<attribute name="PART" x="53.34" y="109.22" size="1.778" layer="95"/>
 </instance>
 <instance part="P+3" gate="G$1" x="17.78" y="119.38" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="17.78" y="116.84" size="1.778" layer="96" rot="MR0"/>
@@ -10855,13 +10840,21 @@ Siemens, Philips, Valvo&lt;p&gt;
 <attribute name="NAME" x="213.36" y="128.27" size="1.778" layer="95"/>
 <attribute name="VALUE" x="208.28" y="114.3" size="1.778" layer="96"/>
 </instance>
-<instance part="C9" gate="G$1" x="236.22" y="121.92" smashed="yes">
+<instance part="C5" gate="G$1" x="236.22" y="121.92" smashed="yes">
 <attribute name="NAME" x="237.363" y="122.4026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.363" y="117.3226" size="1.778" layer="96"/>
 </instance>
-<instance part="C10" gate="G$1" x="236.22" y="109.22" smashed="yes">
+<instance part="C6" gate="G$1" x="236.22" y="109.22" smashed="yes">
 <attribute name="NAME" x="237.363" y="109.7026" size="1.778" layer="95"/>
 <attribute name="VALUE" x="237.363" y="104.6226" size="1.778" layer="96"/>
+</instance>
+<instance part="RX1" gate="G$1" x="55.88" y="162.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.6994" y="164.592" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.387" y="159.512" size="1.778" layer="96"/>
+</instance>
+<instance part="RX2" gate="G$1" x="55.88" y="119.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="58.6994" y="121.412" size="1.778" layer="95"/>
+<attribute name="VALUE" x="48.387" y="116.332" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -10873,35 +10866,14 @@ Siemens, Philips, Valvo&lt;p&gt;
 <wire x1="33.02" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="V1" gate="G$1" pin="2"/>
 <wire x1="38.1" y1="162.56" x2="38.1" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="RX1" gate="G$1" pin="2"/>
+<wire x1="50.8" y1="162.56" x2="43.18" y2="162.56" width="0.1524" layer="91"/>
 <junction x="38.1" y="162.56"/>
-<wire x1="38.1" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="162.56" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="157.48" x2="50.8" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="162.56" x2="38.1" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="162.56" x2="43.18" y2="157.48" width="0.1524" layer="91"/>
+<junction x="43.18" y="162.56"/>
+<wire x1="43.18" y1="157.48" x2="45.72" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="K1" gate="2" pin="S"/>
-<wire x1="48.26" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<junction x="48.26" y="162.56"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="K1" gate="2" pin="O"/>
-<wire x1="60.96" y1="157.48" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="157.48" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="K1" gate="2" pin="P"/>
-<wire x1="55.88" y1="149.86" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="162.56" x2="63.5" y2="157.48" width="0.1524" layer="91"/>
-<junction x="63.5" y="157.48"/>
-<pinref part="X2" gate="-4" pin="KL"/>
-<wire x1="71.12" y1="147.32" x2="63.5" y2="147.32" width="0.1524" layer="91"/>
-<junction x="63.5" y="147.32"/>
-<pinref part="X2" gate="-1" pin="KL"/>
-<wire x1="71.12" y1="162.56" x2="63.5" y2="162.56" width="0.1524" layer="91"/>
-<junction x="63.5" y="162.56"/>
-<junction x="55.88" y="147.32"/>
-<pinref part="K1" gate="1" pin="1"/>
-<wire x1="55.88" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -10999,14 +10971,14 @@ Siemens, Philips, Valvo&lt;p&gt;
 <segment>
 <pinref part="D1" gate="G$1" pin="VAC2"/>
 <pinref part="X3" gate="-2" pin="KL"/>
-<wire x1="200.66" y1="160.02" x2="177.8" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="160.02" x2="180.34" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="X3" gate="-1" pin="KL"/>
 <pinref part="F2" gate="1" pin="1"/>
-<wire x1="177.8" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="165.1" x2="182.88" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -11020,7 +10992,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <segment>
 <pinref part="X3" gate="-3" pin="KL"/>
 <pinref part="F3" gate="1" pin="1"/>
-<wire x1="177.8" y1="154.94" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="154.94" x2="182.88" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -11038,7 +11010,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <wire x1="200.66" y1="142.24" x2="193.04" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="142.24" x2="193.04" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="X3" gate="-4" pin="KL"/>
-<wire x1="193.04" y1="149.86" x2="177.8" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="149.86" x2="180.34" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+230VAC" class="0">
@@ -11065,68 +11037,36 @@ Siemens, Philips, Valvo&lt;p&gt;
 <wire x1="30.48" y1="17.78" x2="20.32" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="K1" gate="1" pin="2"/>
 <pinref part="V1" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="147.32" x2="43.18" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="149.86" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="P-2" gate="G$1" pin="-230VAC"/>
 <wire x1="20.32" y1="147.32" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="132.08" x2="38.1" y2="147.32" width="0.1524" layer="91"/>
 <junction x="38.1" y="147.32"/>
+<pinref part="X2" gate="-4" pin="KL"/>
+<wire x1="71.12" y1="147.32" x2="68.58" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="147.32" x2="68.58" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="K1" gate="1" pin="2"/>
+<wire x1="50.8" y1="132.08" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="132.08" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
+<junction x="50.8" y="132.08"/>
 </segment>
 <segment>
-<pinref part="K2" gate="1" pin="2"/>
 <pinref part="V2" gate="G$1" pin="1"/>
-<wire x1="38.1" y1="104.14" x2="43.18" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="106.68" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="P-3" gate="G$1" pin="-230VAC"/>
-<wire x1="20.32" y1="104.14" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="104.14" x2="20.32" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="K2" gate="1" pin="2"/>
+<wire x1="50.8" y1="91.44" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="88.9" x2="38.1" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="88.9" x2="38.1" y2="104.14" width="0.1524" layer="91"/>
 <junction x="38.1" y="104.14"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="F4" gate="1" pin="2"/>
-<wire x1="33.02" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="V2" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="119.38" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
-<junction x="38.1" y="119.38"/>
-<wire x1="38.1" y1="119.38" x2="48.26" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="119.38" x2="48.26" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="114.3" x2="50.8" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="K2" gate="2" pin="S"/>
-<wire x1="48.26" y1="119.38" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
-<junction x="48.26" y="119.38"/>
-</segment>
-</net>
-<net name="N$12" class="0">
-<segment>
-<pinref part="K2" gate="2" pin="O"/>
-<wire x1="60.96" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="114.3" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="K2" gate="2" pin="P"/>
-<wire x1="55.88" y1="106.68" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="104.14" x2="55.88" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="119.38" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<junction x="63.5" y="114.3"/>
+<wire x1="50.8" y1="88.9" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
+<junction x="50.8" y="88.9"/>
+<wire x1="68.58" y1="88.9" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="X5" gate="-4" pin="KL"/>
-<wire x1="71.12" y1="104.14" x2="63.5" y2="104.14" width="0.1524" layer="91"/>
-<junction x="63.5" y="104.14"/>
-<pinref part="X5" gate="-1" pin="KL"/>
-<wire x1="71.12" y1="119.38" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-<junction x="63.5" y="119.38"/>
-<junction x="55.88" y="104.14"/>
-<pinref part="K2" gate="1" pin="1"/>
-<wire x1="55.88" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="X5" gate="-2" pin="KL"/>
-<wire x1="71.12" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="114.3" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="X5" gate="-3" pin="KL"/>
-<wire x1="68.58" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="104.14" x2="71.12" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -11168,7 +11108,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <wire x1="226.06" y1="124.46" x2="231.14" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="124.46" x2="231.14" y2="127" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-1" pin="KL"/>
-<pinref part="C9" gate="G$1" pin="+"/>
+<pinref part="C5" gate="G$1" pin="+"/>
 <wire x1="238.76" y1="127" x2="236.22" y2="127" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="127" x2="231.14" y2="127" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="127" x2="236.22" y2="124.46" width="0.1524" layer="91"/>
@@ -11181,7 +11121,7 @@ Siemens, Philips, Valvo&lt;p&gt;
 <wire x1="226.06" y1="119.38" x2="231.14" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="231.14" y1="119.38" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="X7" gate="-2" pin="KL"/>
-<pinref part="C10" gate="G$1" pin="-"/>
+<pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="238.76" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="101.6" x2="231.14" y2="101.6" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="101.6" x2="236.22" y2="104.14" width="0.1524" layer="91"/>
@@ -11190,10 +11130,10 @@ Siemens, Philips, Valvo&lt;p&gt;
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="C9" gate="G$1" pin="-"/>
+<pinref part="C5" gate="G$1" pin="-"/>
 <wire x1="236.22" y1="114.3" x2="236.22" y2="116.84" width="0.1524" layer="91"/>
 <junction x="236.22" y="114.3"/>
-<pinref part="C10" gate="G$1" pin="+"/>
+<pinref part="C6" gate="G$1" pin="+"/>
 <wire x1="236.22" y1="114.3" x2="236.22" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="236.22" y1="114.3" x2="190.5" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="114.3" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
@@ -11203,6 +11143,63 @@ Siemens, Philips, Valvo&lt;p&gt;
 <pinref part="X6" gate="-3" pin="KL"/>
 <wire x1="190.5" y1="116.84" x2="187.96" y2="116.84" width="0.1524" layer="91"/>
 <junction x="190.5" y="116.84"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="F4" gate="1" pin="2"/>
+<wire x1="33.02" y1="119.38" x2="38.1" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="V2" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="119.38" x2="38.1" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="RX2" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="119.38" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
+<junction x="38.1" y="119.38"/>
+<pinref part="K2" gate="2" pin="S"/>
+<wire x1="43.18" y1="119.38" x2="50.8" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="114.3" x2="43.18" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="114.3" x2="43.18" y2="119.38" width="0.1524" layer="91"/>
+<junction x="43.18" y="119.38"/>
+</segment>
+</net>
+<net name="N$23" class="0">
+<segment>
+<pinref part="X5" gate="-2" pin="KL"/>
+<wire x1="71.12" y1="114.3" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="114.3" x2="68.58" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="X5" gate="-3" pin="KL"/>
+<wire x1="68.58" y1="109.22" x2="71.12" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$24" class="0">
+<segment>
+<pinref part="X5" gate="-1" pin="KL"/>
+<pinref part="RX2" gate="G$1" pin="1"/>
+<wire x1="60.96" y1="119.38" x2="66.04" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="119.38" x2="71.12" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="119.38" x2="66.04" y2="104.14" width="0.1524" layer="91"/>
+<junction x="66.04" y="119.38"/>
+<wire x1="66.04" y1="104.14" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="K2" gate="2" pin="P"/>
+<wire x1="50.8" y1="104.14" x2="50.8" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="K2" gate="1" pin="1"/>
+<wire x1="50.8" y1="101.6" x2="50.8" y2="104.14" width="0.1524" layer="91"/>
+<junction x="50.8" y="104.14"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="RX1" gate="G$1" pin="1"/>
+<pinref part="X2" gate="-1" pin="KL"/>
+<wire x1="60.96" y1="162.56" x2="66.04" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="162.56" x2="71.12" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="162.56" x2="66.04" y2="147.32" width="0.1524" layer="91"/>
+<junction x="66.04" y="162.56"/>
+<wire x1="66.04" y1="147.32" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="K1" gate="2" pin="P"/>
+<wire x1="50.8" y1="147.32" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="K1" gate="1" pin="1"/>
+<wire x1="50.8" y1="144.78" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
+<junction x="50.8" y="147.32"/>
 </segment>
 </net>
 </nets>
