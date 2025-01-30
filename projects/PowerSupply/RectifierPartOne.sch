@@ -10730,9 +10730,9 @@ Grid 5.08 mm&lt;p&gt;
 <attribute name="VALUE" x="15.24" y="35.56" size="1.778" layer="96"/>
 <attribute name="NAME" x="13.97" y="18.669" size="1.778" layer="95" rot="R180"/>
 </instance>
-<instance part="F3" gate="1" x="121.92" y="76.2" smashed="yes">
-<attribute name="NAME" x="118.11" y="77.597" size="1.778" layer="95"/>
-<attribute name="VALUE" x="118.11" y="73.279" size="1.778" layer="96"/>
+<instance part="F3" gate="1" x="121.92" y="71.12" smashed="yes">
+<attribute name="NAME" x="118.11" y="72.517" size="1.778" layer="95"/>
+<attribute name="VALUE" x="118.11" y="68.199" size="1.778" layer="96"/>
 </instance>
 <instance part="X4" gate="-1" x="177.8" y="58.42" smashed="yes" rot="MR0">
 <attribute name="NAME" x="179.07" y="59.309" size="1.778" layer="95" rot="MR180"/>
@@ -10895,29 +10895,13 @@ Grid 5.08 mm&lt;p&gt;
 <wire x1="127" y1="86.36" x2="134.62" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$13" class="0">
-<segment>
-<pinref part="X3" gate="-3" pin="KL"/>
-<pinref part="F3" gate="1" pin="1"/>
-<wire x1="114.3" y1="76.2" x2="116.84" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="D2" gate="G$1" pin="VAC1"/>
-<wire x1="134.62" y1="68.58" x2="129.54" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="68.58" x2="129.54" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="F3" gate="1" pin="2"/>
-<wire x1="129.54" y1="76.2" x2="127" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="D2" gate="G$1" pin="VAC2"/>
-<wire x1="134.62" y1="63.5" x2="127" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="127" y1="63.5" x2="127" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-4" pin="KL"/>
-<wire x1="127" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="68.58" x2="132.08" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="68.58" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="X3" gate="-3" pin="KL"/>
+<wire x1="114.3" y1="76.2" x2="132.08" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+230VAC" class="0">
@@ -10969,6 +10953,22 @@ Grid 5.08 mm&lt;p&gt;
 <pinref part="K1" gate="1" pin="1"/>
 <wire x1="88.9" y1="124.46" x2="88.9" y2="127" width="0.1524" layer="91"/>
 <junction x="88.9" y="127"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="F3" gate="1" pin="1"/>
+<pinref part="X3" gate="-4" pin="KL"/>
+<wire x1="116.84" y1="71.12" x2="114.3" y2="71.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="F3" gate="1" pin="2"/>
+<wire x1="127" y1="71.12" x2="129.54" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="71.12" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="VAC2"/>
+<wire x1="129.54" y1="63.5" x2="134.62" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
