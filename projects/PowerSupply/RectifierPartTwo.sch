@@ -10787,7 +10787,7 @@ Block, Siemens and generic&lt;p&gt;
 <part name="RX1" library="bb84" deviceset="EPCB57364-S259" device="" value="B57364-S259"/>
 <part name="X3" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-06P" device="" package3d_urn="urn:adsk.eagle:package:10742/1" value="T2-SEC"/>
 <part name="F3" library="fuse" library_urn="urn:adsk.eagle:library:233" deviceset="SH22,5A" device="" package3d_urn="urn:adsk.eagle:package:14070/1" value="6.3AT"/>
-<part name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1"/>
+<part name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" deviceset="W237-02P" device="" package3d_urn="urn:adsk.eagle:package:10734/1" value="30V"/>
 </parts>
 <sheets>
 <sheet>
@@ -10902,7 +10902,7 @@ Block, Siemens and generic&lt;p&gt;
 <attribute name="NAME" x="194.31" y="84.709" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="X4" gate="-2" x="193.04" y="96.52" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="193.04" y="99.06" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VALUE" x="193.04" y="99.06" size="1.778" layer="96"/>
 <attribute name="NAME" x="194.31" y="97.409" size="1.778" layer="95" rot="MR180"/>
 </instance>
 </instances>

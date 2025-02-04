@@ -1734,20 +1734,20 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="2200µF" x="57" y="45" smashed="yes" rot="R45">
-<attribute name="NAME" x="55.585784375" y="53.48528125" size="1.778" layer="25" ratio="10" rot="R45"/>
+<attribute name="NAME" x="63" y="51" size="1.778" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="4" x="87.53286875" y="62.960509375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="87.53286875" y="62.960509375" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="58.4142125" y="37.92893125" size="1.778" layer="27" ratio="10" rot="R45"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E7,5-16" package3d_urn="urn:adsk.eagle:package:23382/2" value="4700µF" x="40" y="45" smashed="yes" rot="R45">
-<attribute name="NAME" x="38.585784375" y="53.48528125" size="1.778" layer="25" ratio="10" rot="R45"/>
+<attribute name="NAME" x="46" y="51" size="1.778" layer="25" ratio="10"/>
 <attribute name="POPULARITY" value="4" x="84.901278125" y="77.328921875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="SPICEPREFIX" value="C" x="84.901278125" y="77.328921875" size="1.778" layer="27" rot="R45" display="off"/>
 <attribute name="VALUE" x="41.4142125" y="37.92893125" size="1.778" layer="27" ratio="10" rot="R45"/>
 </element>
 <element name="D1" library="bb84" package="B..C" value="B40C5000-3300A" x="70" y="30" smashed="yes" rot="R90">
-<attribute name="NAME" x="64" y="30" size="1.27" layer="25" rot="R90"/>
-<attribute name="VALUE" x="66" y="47" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="70.5" y="46.5" size="1.27" layer="25"/>
+<attribute name="VALUE" x="72.5" y="14.5" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="F1" library="fuse" library_urn="urn:adsk.eagle:library:233" package="SH22,5A" package3d_urn="urn:adsk.eagle:package:14070/1" value="1AT" x="23" y="59" smashed="yes">
 <attribute name="MF" value="" x="48.4" y="27.25" size="1.778" layer="27" display="off"/>
@@ -1761,7 +1761,7 @@ design rules under a new name.</description>
 <element name="F2" library="fuse" library_urn="urn:adsk.eagle:library:233" package="SH22,5A" package3d_urn="urn:adsk.eagle:package:14070/1" value="4A" x="40" y="23" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="71.75" y="75.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0031.7701.11" x="71.75" y="75.07" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="34" y="36" size="1.778" layer="25" ratio="10"/>
+<attribute name="NAME" x="44.5" y="36" size="1.778" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="71.75" y="75.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="04F1224" x="71.75" y="75.07" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="71.75" y="75.07" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1770,7 +1770,7 @@ design rules under a new name.</description>
 <element name="F3" library="fuse" library_urn="urn:adsk.eagle:library:233" package="SH22,5A" package3d_urn="urn:adsk.eagle:package:14070/1" value="6.3AT" x="57" y="23" smashed="yes" rot="R90">
 <attribute name="MF" value="" x="102.72" y="48.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="0031.7701.11" x="102.72" y="48.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="63" y="25" size="1.778" layer="25" ratio="10" rot="R270"/>
+<attribute name="NAME" x="61.5" y="36" size="1.778" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="102.72" y="48.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_NEWARK" value="04F1224" x="102.72" y="48.4" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="POPULARITY" value="0" x="102.72" y="48.4" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1806,7 +1806,7 @@ design rules under a new name.</description>
 <element name="X2" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-4P" package3d_urn="urn:adsk.eagle:package:10735/1" value="T2-PRI" x="20" y="5" smashed="yes">
 <attribute name="MF" value="" x="65.72" y="-67.39" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="65.72" y="-67.39" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="7" y="1" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="7.5" y="1" size="1.27" layer="25" ratio="10"/>
 <attribute name="OC_FARNELL" value="unknown" x="65.72" y="-67.39" size="1.778" layer="27" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="65.72" y="-67.39" size="1.778" layer="27" display="off"/>
 <attribute name="POPULARITY" value="2" x="65.72" y="-67.39" size="1.778" layer="27" display="off"/>
@@ -1821,14 +1821,14 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="1" x="78.21" y="-54.69" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="57" y="1" size="1.27" layer="27" ratio="10"/>
 </element>
-<element name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="" x="45" y="60" smashed="yes" rot="R180">
+<element name="X4" library="con-wago-508" library_urn="urn:adsk.eagle:library:196" package="W237-132" package3d_urn="urn:adsk.eagle:package:10734/1" value="30V" x="45" y="60" smashed="yes" rot="R180">
 <attribute name="MF" value="" x="45" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="" x="45" y="60" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="48.81" y="64.318" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="39.5" y="64.5" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="OC_FARNELL" value="unknown" x="45" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_NEWARK" value="unknown" x="45" y="60" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="POPULARITY" value="10" x="45" y="60" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="48.81" y="66.985" size="1.27" layer="27" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="49.5" y="64.5" size="1.27" layer="27" ratio="10" rot="R180"/>
 </element>
 </elements>
 <signals>
@@ -1936,10 +1936,10 @@ design rules under a new name.</description>
 <contactref element="C1" pad="-"/>
 <contactref element="D1" pad="-VDC"/>
 <wire x1="59.694075" y1="47.694075" x2="42.694075" y2="47.694075" width="2.032" layer="16"/>
-<wire x1="42.694075" y1="47.694075" x2="47.54" y2="52.54" width="2.032" layer="16"/>
-<wire x1="47.54" y1="52.54" x2="47.54" y2="60.635" width="2.032" layer="16"/>
 <wire x1="59.694075" y1="47.694075" x2="64.755925" y2="47.694075" width="2.032" layer="16"/>
 <wire x1="64.755925" y1="47.694075" x2="69.95" y2="42.5" width="2.032" layer="16"/>
+<wire x1="42.694075" y1="47.694075" x2="42.694075" y2="55.789075" width="2.032" layer="16"/>
+<wire x1="42.694075" y1="55.789075" x2="47.54" y2="60.635" width="2.032" layer="16"/>
 </signal>
 <signal name="N$7">
 <contactref element="X3" pad="3"/>
