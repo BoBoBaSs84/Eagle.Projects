@@ -13774,6 +13774,15 @@ schottky</description>
 </library>
 <library name="bb84">
 <packages>
+<package name="11PHC">
+<description>&lt;b&gt;11PHC - Plugable Inductors (Pin Type Coils) - with Tube&lt;/b&gt;</description>
+<circle x="0" y="0" radius="6" width="0.2" layer="21"/>
+<circle x="0" y="0" radius="5.25" width="0.1" layer="21"/>
+<pad name="P$1" x="-2.5" y="0" drill="0.8" shape="long" rot="R90"/>
+<pad name="P$2" x="2.5" y="0" drill="0.8" shape="long" rot="R90"/>
+<text x="-4.5" y="6.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.5" y="-7.5" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 <package name="IND-120">
 <circle x="0" y="0" radius="6" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="5" width="0.1" layer="21"/>
@@ -13803,12 +13812,33 @@ schottky</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="IND-120-470K">
+<deviceset name="11PHC-221K-50" prefix="L">
+<description>&lt;h3&gt;Stehende-Induktivität, 11PHC, Ferrit, 220 µH&lt;/h3&gt;
+&lt;h4&gt;Allgemeines&lt;/h4&gt;
+Typ: Induktivität&lt;br&gt;
+Bauform: 11PHC&lt;br&gt;
+Toleranz: ±10%
+&lt;h4&gt;Anschlüsse / Schnittstellen&lt;/h4&gt;
+Anschluss: radial, stehend
+&lt;h4&gt;Elektrische Werte&lt;/h4&gt;
+Induktivität: 220 µH&lt;br&gt;
+Strom: 1,68A&lt;br&gt;
+Widerstand: 0,53 Ohm
+&lt;h4&gt;Maße&lt;/h4&gt;
+Ø: 12,0mm&lt;br&gt;
+Höhe: 15,0mm&lt;br&gt;
+Rastermaß: 5,0 mm
+&lt;h4&gt;Herstellerangaben&lt;/h4&gt;
+Hersteller: FASTRON&lt;br&gt;
+Artikelnummer des Herstellers: 11PHC-221K-50&lt;br&gt;
+Verpackungsgewicht: 0.004kg&lt;br&gt;
+RoHS: konform&lt;br&gt;
+EAN/GTIN: 9900001386770&lt;br&gt;</description>
 <gates>
 <gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="IND-120">
+<device name="" package="11PHC">
 <connects>
 <connect gate="G$1" pin="1" pad="P$1"/>
 <connect gate="G$1" pin="2" pad="P$2"/>
@@ -13983,7 +14013,7 @@ Feel free to contact us at &lt;a href="mailto:Support@PCBLayout.com"&gt;Support@
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="1k"/>
 <part name="R6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/2" value="3.09k"/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1000µF"/>
-<part name="L3" library="bb84" deviceset="IND-120-470K" device="" value="33µH"/>
+<part name="L3" library="bb84" deviceset="11PHC-221K-50" device="" value="220µH"/>
 <part name="L4" library="bb84" deviceset="B82111B0000C020" device="" value="20µH"/>
 <part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="100µF"/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E5-10.5" package3d_urn="urn:adsk.eagle:package:23372/2" value="1000µF"/>
